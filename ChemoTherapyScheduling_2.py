@@ -12,7 +12,7 @@ T = 40            # 規劃天數
 prob = 0.3
 slot_length = 15
 work_start = 9*60
-max_clock = 8*60
+max_clock = 7*60
 n_slots = max_clock // slot_length
 
 random.seed(17)
@@ -113,9 +113,9 @@ for i in range(P):
 # 建模
 CTS = Model("ChemoTherapyScheduling")
 CTS.setParam('OutputFlag', 1)
-CTS.setParam('TimeLimit', 1800)
+CTS.setParam('TimeLimit', 300)
 CTS.setParam('MIPGap', 0.01)
-CTS.setParam('Threads', 4)
+CTS.setParam('Threads', 6)
 
 X = CTS.addVars(P, T, vtype=GRB.BINARY, name="X")
 Y = CTS.addVars(P, T, vtype=GRB.BINARY, name="Y")
@@ -257,7 +257,7 @@ task_colors = {
     "task4": "red"
 }
 
-output_folder = r"D:\桌面\OTA_paper\chemo\gantt_days"
+output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_2"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
