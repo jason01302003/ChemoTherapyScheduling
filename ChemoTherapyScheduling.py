@@ -10,6 +10,7 @@ P = 20            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
 prob = 0.3
+# 設定時間，並切分為slots
 slot_length = 15
 work_start = 9*60
 max_clock = 7*60
@@ -23,6 +24,7 @@ f = open(path, 'w')
 
 # 生成測試資料
 V = []
+
 Last_Position = []
 for i in range(P):
     treatment_list = []
@@ -37,8 +39,10 @@ for i in range(P):
     Last_Position.append(last)
 # 隨機每日最大容量
 K = [random.randint(3, 10) for _ in range(T)]
+
 # Pattern生成和對照
 Pattern = []
+
 for i in range(P):
     pattern_list = [
         random.randint(1, 2),
@@ -93,6 +97,7 @@ for i in range(P):
     feasible_start_slots[i] = [q for q in range(
         0, n_slots) if q + sum(dslots) <= n_slots]
 
+# 紀錄病人在那些slot會需要護士
 nurse_occ = {}
 for i in range(P):
     dslots = durations_slots[i]
@@ -119,31 +124,32 @@ CTS.setParam('Threads', 6)
 
 X = CTS.addVars(P, T, vtype=GRB.BINARY, name="X")
 Y = CTS.addVars(P, T, vtype=GRB.BINARY, name="Y")
-MaxSize = CTS.addVar(vtype=GRB.INTEGER, lb=0, name="MaxSize")
+MaxSize = CTS.addVar(vtype=GRB.INTEGER, lb=0, name="MaxSize")  # 每天最多病人數
 
 Z = {}
 for i in range(P):
     for t in range(T):
         for q in feasible_start_slots[i]:
-            Z[(i, t, q)] = CTS.addVar(vtype=GRB.BINARY, name=f"Z_{i}_{t}_{q}")
+            Z[(i, t, q)] = CTS.addVar(vtype=GRB.BINARY,
+                                      name=f"Z_{i}_{t}_{q}")  # 病人 i 在 t 天從 slot q 開始治療
 CTS.update()
 
 # 約束 (A) 只開始一次
 for i in range(P):
     if Last_Position[i] == -1:
         for t in range(T):
-            CTS.addConstr(X[i, t] == 0)
+            CTS.addConstr(X[i, t] == 0)  # 病人 i 在第 t 天開始療程
         continue
     max_offset = Last_Position[i]
     max_start = T - 1 - max_offset
     CTS.addConstrs(
         (quicksum(X[i, s] for s in range(max_start + 1)) == 1 for i in range(P)), "Start Once")
 
-# 約束 (B) Y >= X
+# 約束 (B) Y >= X 若已經開始治療，後面幾天要跟著治療
 for i in range(P):
     if Last_Position[i] == -1:
         for t in range(T):
-            CTS.addConstr(Y[i, t] == 0)
+            CTS.addConstr(Y[i, t] == 0)  # 病人 i 在第 t 天有治療
         continue
     max_offset = Last_Position[i]
     max_start = T - 1 - max_offset
@@ -154,14 +160,14 @@ for i in range(P):
                 if day < T:
                     CTS.addConstr(Y[i, day] >= X[i, s])
 
-# 約束 (C) 最大容量
+# 約束 (C) 每日最大容量限制
 for t in range(T):
     CTS.addConstr(quicksum(Y[i, t] for i in range(P))
                   <= MaxSize, "Maximum Daily Size")
     CTS.addConstr(quicksum(Y[i, t]
                   for i in range(P)) <= K[t], "Actual Daily Size")
 
-# 約束 (D) Z and Y link
+# 約束 (D) Z and Y link 如果有治療，則一定要選一個開始時間
 for i in range(P):
     for t in range(T):
         zs = [Z[(i, t, q)] for q in feasible_start_slots[i]]
@@ -175,7 +181,7 @@ Conflict = {}
 for t in range(T):
     for s in range(n_slots):
         Conflict[(t, s)] = CTS.addVar(
-            vtype=GRB.CONTINUOUS, lb=0, name=f"Conflict_{t}_{s}")
+            vtype=GRB.CONTINUOUS, lb=0, name=f"Conflict_{t}_{s}")  # 該時段護理師衝突量
 
 for t in range(T):
     for s in range(n_slots):
@@ -189,7 +195,7 @@ for t in range(T):
             CTS.addConstr(Conflict[(t, s)] >= 0)
 
 # 目標函數
-penalty_weight = 100
+penalty_weight = 100 #衝突允許的程度
 CTS.setObjective(MaxSize + penalty_weight *
                  quicksum(Conflict.values()), GRB.MINIMIZE)
 
@@ -257,7 +263,7 @@ task_colors = {
     "task4": "red"
 }
 
-output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_2"
+output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_3"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
