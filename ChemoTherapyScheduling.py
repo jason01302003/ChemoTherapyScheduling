@@ -12,8 +12,17 @@ T = 40            # 規劃天數
 prob = 0.3
 # 設定時間，並切分為slots
 slot_length = 15
-work_start = 9*60
-max_clock = 8*60
+work_start = 9 * 60
+max_clock = 8 * 60
+# 定義午休時段
+lunch_start_min = 12 * 60          # 12:00
+lunch_end_min = 13 * 60          # 13:00
+
+# 轉換成 slot 索引 -> 也就是 slot 12, 13, 14, 15 是禁止護士工作的時段
+lunch_start_slot = (lunch_start_min - work_start) // slot_length  # = 12
+lunch_end_slot = (lunch_end_min - work_start) // slot_length  # = 16
+
+# 總共的 slot 數量
 n_slots = max_clock // slot_length
 
 random.seed(17)
@@ -51,7 +60,9 @@ for i in range(P):
         random.randint(1, 3),
         random.randint(1, 2)
     ]
+
     Pattern.append(pattern_list)
+
 task_time_map = {
     "task1": {"1": 15, "2": 30},
     "task2": {"1": 150, "2": 165, "3": 180, "4": 195, "5": 210, "6": 225, "7": 240},
@@ -59,6 +70,7 @@ task_time_map = {
     "task4": {"1": 15, "2": 30, "3": 45},
     "task5": {"1": 15, "2": 30}
 }
+
 tasks = ["task1", "task2", "task3", "task4", "task5"]
 
 # 輸出生成資料
@@ -66,20 +78,43 @@ tasks = ["task1", "task2", "task3", "task4", "task5"]
 for j in range(T):
     print(K[j], end="", file=f)
 print("\n", file=f)
+
 for i in range(P):
     print(f"Patient {i:2d}: ", end="", file=f)
+
     for j in range(L):
         print(V[i][j], end="", file=f)
     print("\n", file=f)
     print(f"Pattern  {i:2d}: ", end="", file=f)
+
     for j in range(5):
         print(Pattern[i][j], end="", file=f)
     print("\n", file=f)
 
 # 預處理
+
+# 判斷護士工作是否與午休衝突的函數
+
+
+def nurse_tasks_overlap_lunch(q, dslots, lunch_start_slot, lunch_end_slot):
+    t1_start = q
+    t3_start = q + dslots[0] + dslots[1]
+    t5_start = q + dslots[0] + dslots[1] + dslots[2] + dslots[3]
+
+    # 只檢查 task1、task3、task5
+    for start, length in [(t1_start, dslots[0]),
+                          (t3_start, dslots[2]),
+                          (t5_start, dslots[4])]:
+        for s in range(start, start + length):
+            if lunch_start_slot <= s < lunch_end_slot:
+                return True
+    return False
+
+
 durations_minutes = []
 durations_slots = []
 total_slots = []
+
 feasible_start_slots = {}
 
 for i in range(P):
@@ -90,12 +125,17 @@ for i in range(P):
              task_time_map["task5"][str(Pattern[i][4])]]
     durations_minutes.append(dmins)
     dslots = []
+
     for d in dmins:
         dslots.append((d + slot_length - 1)//slot_length)
     durations_slots.append(dslots)
     total_slots.append(sum(dslots))
-    feasible_start_slots[i] = [q for q in range(
-        0, n_slots) if q + sum(dslots) <= n_slots]
+
+    feasible_start_slots[i] = [
+        q for q in range(0, n_slots)
+        if q + sum(dslots) <= n_slots
+        and not nurse_tasks_overlap_lunch(q, dslots, lunch_start_slot, lunch_end_slot)
+    ]
 
 # 紀錄病人在那些slot會需要護士
 nurse_occ = {}
@@ -121,7 +161,7 @@ for i in range(P):
 # 建模
 CTS = Model("ChemoTherapyScheduling")
 CTS.setParam('OutputFlag', 1)
-CTS.setParam('TimeLimit', 300)
+CTS.setParam('TimeLimit', 600)
 CTS.setParam('MIPGap', 0.01)
 CTS.setParam('Threads', 6)
 
@@ -186,6 +226,7 @@ for t in range(T):
         Conflict[(t, s)] = CTS.addVar(
             vtype=GRB.CONTINUOUS, lb=0, name=f"Conflict_{t}_{s}")  # 該時段護理師衝突量
 
+# 計算每個時段的衝突量 → 如果同一時段有多於 1 位病人需要護士，則產生衝突
 for t in range(T):
     for s in range(n_slots):
         terms = []
@@ -197,6 +238,15 @@ for t in range(T):
             CTS.addConstr(Conflict[(t, s)] >= quicksum(terms) - 1)
             CTS.addConstr(Conflict[(t, s)] >= 0)
 
+# 午休時間護士不能工作
+for t in range(T):
+    for s in range(lunch_start_slot, lunch_end_slot):
+        terms = [Z[(i, t, q)]
+                 for i in range(P)
+                 for q in feasible_start_slots[i]
+                 if s in nurse_occ[(i, q)]]
+        if terms:
+            CTS.addConstr(quicksum(terms) == 0, f"NurseLunch_{t}_{s}")
 # 目標函數
 # 讓 1 次衝突的代價 ≈ MaxSize 增加 1 的代價
 # Conflict_total 期望值大約是 MaxSize 的幾倍 → penalty 設在 1~5 較合理
@@ -327,6 +377,14 @@ for day in range(T):
 
                         current = next_t
 
+    # 午休區域標記（畫在所有病人的y上）
+    lunch_start_min_abs = work_start + lunch_start_slot * slot_length  # 轉回分鐘
+    lunch_end_min_abs = work_start + lunch_end_slot * slot_length
+
+    ax.axvspan(
+        lunch_start_min_abs, lunch_end_min_abs,
+        color="lightgray", alpha=0.5, label="Lunch Break"
+    )
     # y 軸
     ax.set_yticks(range(len(patient_indices)))
     ax.set_yticklabels(y_labels)
@@ -342,7 +400,9 @@ for day in range(T):
     # 圖例
     patches = [mpatches.Patch(color=color, label=task)
                for task, color in task_colors.items()]
-    patches.append(mpatches.Patch(color="orange", label="Nurse conflict"))
+    patches.append(mpatches.Patch(color="orange",    label="Nurse conflict"))
+    patches.append(mpatches.Patch(color="lightgray",
+                   label="Lunch Break", alpha=0.5))
     ax.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc='upper left')
 
     ax.set_title(f"Chemotherapy Schedule - Day {day}")
