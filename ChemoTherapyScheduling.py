@@ -27,7 +27,8 @@ n_slots = max_clock // slot_length
 
 random.seed(17)
 rnd_txt = random.randint(1, 9)
-fname = rf"D:\桌面\OTA_paper\chemo\SCP"+str(P)+"-"+str(2)+".txt"
+fname = rf"D:\桌面\OTA_paper\ChemoTherapyScheduling\SCP" + \
+    str(P)+"-"+str(rnd_txt)+".txt"
 path = fname
 f = open(path, 'w')
 
@@ -206,9 +207,9 @@ for i in range(P):
 # 約束 (C) 每日最大容量限制
 for t in range(T):
     CTS.addConstr(quicksum(Y[i, t] for i in range(P))
-                  <= MaxSize, "Maximum Daily Size")
-    CTS.addConstr(quicksum(Y[i, t]
-                  for i in range(P)) <= K[t], "Actual Daily Size")
+                <= MaxSize,   f"Max_Daily_Size_{t}")
+    CTS.addConstr(quicksum(Y[i, t] for i in range(P)) <=
+                K[t],      f"Actual_Daily_Size_{t}")
 
 # 約束 (D) Z and Y link 如果有治療，則一定要選一個開始時間
 for i in range(P):
@@ -267,16 +268,16 @@ for i in range(P):
     schedule[i] = []
     start_day = None
     for s in range(T):
-        if X[i, s].X != 0:
+        if X[i, s].X > 0.5:
             start_day = s
             break
     if start_day is None:
         continue
     for t in range(T):
-        if Y[i, t].X != 0:
+        if Y[i, t].X > 0.5:
             chosen_q = None
             for q in feasible_start_slots[i]:
-                if Z[(i, t, q)].X != 0:
+                if Z[(i, t, q)].X > 0.5:
                     chosen_q = q
                     break
             if chosen_q is None:
