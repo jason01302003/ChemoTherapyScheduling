@@ -162,7 +162,7 @@ for i in range(P):
 # 建模
 CTS = Model("ChemoTherapyScheduling")
 CTS.setParam('OutputFlag', 1)
-CTS.setParam('TimeLimit', 600)
+CTS.setParam('TimeLimit', 900)
 CTS.setParam('MIPGap', 0.01)
 CTS.setParam('Threads', 6)
 
@@ -261,6 +261,24 @@ CTS.optimize()
 endtime = time.time()
 print("Run time: %2.5s seconds" % (endtime - starttime))
 print("Run time: %2.5s seconds" % (endtime - starttime), file=f)
+
+# 統計衝突資訊
+conflict_slots = 0
+total_conflict_amount = 0
+
+for t in range(T):
+    for s in range(n_slots):
+        val = Conflict[(t, s)].X
+        if val > 0.5:
+            conflict_slots += 1
+            total_conflict_amount += val
+
+print(f"有衝突的 slot 數量：{conflict_slots}")
+print(f"衝突總人次：{total_conflict_amount:.0f}")
+
+# 同步寫入 txt 檔
+print(f"有衝突的 slot 數量：{conflict_slots}", file=f)
+print(f"衝突總人次：{total_conflict_amount:.0f}", file=f)
 
 # 生成排程
 schedule = {}
