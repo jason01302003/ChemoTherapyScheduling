@@ -13,7 +13,7 @@ prob = 0.3
 # 設定時間，並切分為slots
 slot_length = 15
 work_start = 9*60
-max_clock = 7*60
+max_clock = 8*60
 n_slots = max_clock // slot_length
 
 random.seed(17)
@@ -63,7 +63,7 @@ tasks = ["task1", "task2", "task3", "task4", "task5"]
 
 # 輸出生成資料
 
-for j in range(L):
+for j in range(T):
     print(K[j], end="", file=f)
 print("\n", file=f)
 for i in range(P):
@@ -102,17 +102,20 @@ nurse_occ = {}
 for i in range(P):
     dslots = durations_slots[i]
     for q in feasible_start_slots[i]:
+        # 明確計算每個 task 的起始 slot
+        t1_start = q
+        t3_start = q + dslots[0] + dslots[1]
+        t5_start = q + dslots[0] + dslots[1] + dslots[2] + dslots[3]
+
         occ = set()
-        offset = q
-        for s in range(offset, offset + dslots[0]):
-            occ.add(s)
-        offset += dslots[0] + dslots[1]
-        for s in range(offset, offset + dslots[2]):
-            occ.add(s)
-        offset += dslots[2] + dslots[3]
-        for s in range(offset, offset + dslots[4]):
-            occ.add(s)
-        occ = set([s for s in occ if 0 <= s < n_slots])
+        for s in range(t1_start, t1_start + dslots[0]):
+            occ.add(s)  # task1
+        for s in range(t3_start, t3_start + dslots[2]):
+            occ.add(s)  # task3
+        for s in range(t5_start, t5_start + dslots[4]):
+            occ.add(s)  # task5
+
+        occ = {s for s in occ if 0 <= s < n_slots}
         nurse_occ[(i, q)] = occ
 
 # 建模
@@ -142,8 +145,8 @@ for i in range(P):
         continue
     max_offset = Last_Position[i]
     max_start = T - 1 - max_offset
-    CTS.addConstrs(
-        (quicksum(X[i, s] for s in range(max_start + 1)) == 1 for i in range(P)), "Start Once")
+    CTS.addConstr(quicksum(X[i, s] for s in range(
+        max_start + 1)) == 1, f"Start_Once_{i}")
 
 # 約束 (B) Y >= X 若已經開始治療，後面幾天要跟著治療
 for i in range(P):
@@ -195,7 +198,9 @@ for t in range(T):
             CTS.addConstr(Conflict[(t, s)] >= 0)
 
 # 目標函數
-penalty_weight = 100 #衝突允許的程度
+# 讓 1 次衝突的代價 ≈ MaxSize 增加 1 的代價
+# Conflict_total 期望值大約是 MaxSize 的幾倍 → penalty 設在 1~5 較合理
+penalty_weight = 2  # 衝突允許的程度
 CTS.setObjective(MaxSize + penalty_weight *
                  quicksum(Conflict.values()), GRB.MINIMIZE)
 
