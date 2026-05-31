@@ -6,7 +6,7 @@ import random
 from gurobipy import *
 
 # 參數
-P = 45            # 病人數
+P = 40            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
 N_nurses = 2       # 護士人數
@@ -48,7 +48,7 @@ for i in range(P):
     V.append(treatment_list)
     Last_Position.append(last)
 # 隨機每日最大容量，要隨P調整
-K = [random.randint(10, 16) for _ in range(T)]
+K = [random.randint(10, 20) for _ in range(T)]
 
 # Pattern生成和對照
 Pattern = []
@@ -419,7 +419,7 @@ task_colors = {
     }
 }
 
-output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_dm_45_1"
+output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_dm_40_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
