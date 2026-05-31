@@ -6,7 +6,7 @@ import random
 from gurobipy import *
 
 # 參數
-P = 40            # 病人數
+P = 45            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
 N_nurses = 2       # 護士人數
@@ -418,7 +418,7 @@ task_colors = {
     }
 }
 
-output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_dm_40_1"
+output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_dm_45_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
@@ -441,25 +441,33 @@ for day in range(T):
     # 繪製甘特圖
     nurse_colors = {0: "skyblue", 1: "lightgreen"}  # 護士 0 藍色，護士 1 綠色
 
+    # 繪製甘特圖
+    nurse_colors = {0: "skyblue", 1: "lightgreen"}  # 護士 0 藍色，護士 1 綠色
+
     for pos, i in enumerate(patient_indices):
         for day_tasks in schedule[i]:
             if day_tasks[0][0] == day:
+
                 for _, task, s_min, e_min, nurse_id in day_tasks:
 
-                    # 逐 slot 繪製，衝突 slot 標橘色
                     current = s_min
                     while current < e_min:
                         next_t = min(current + slot_length, e_min)
                         t_slot = (current - work_start) // slot_length
 
-                        # 判斷是否有衝突
                         has_conflict = False
-                        if 0 <= t_slot < n_slots:
-                            if Conflict[(day, t_slot)].X > 0.5:
+                        if 0 <= t_slot < n_slots and task in ["task1", "task3", "task5"]:
+                            # 檢查這位護士自己的衝突
+                            nurse_conflict = NurseConflict[(
+                                day, t_slot, nurse_id)].X > 0.5
+                            # 檢查雙護士滿載衝突
+                            total_conflict = Conflict[(day, t_slot)].X > 0.5
+
+                            if nurse_conflict or total_conflict:
                                 has_conflict = True
 
-                        # 顏色邏輯：護士任務衝突 → 橘色
-                        if has_conflict and task in ["task1", "task3", "task5"]:
+                        # 有衝突標橘色
+                        if has_conflict:
                             color = "orange"
                         else:
                             color = task_colors[nurse_id][task]
