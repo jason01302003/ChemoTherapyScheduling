@@ -247,8 +247,15 @@ for t in range(T):
             CTS.addConstr(Conflict[(t, s)] >= quicksum(
                 terms) - N_nurses)  # 改為 N_nurses
             CTS.addConstr(Conflict[(t, s)] >= 0)
-            
-# NurseSlot 硬性限制（每位護士每 slot ≤ 1 人）
+
+# 每位護士的個別衝突（同一護士同時服務 2 人才懲罰）
+NurseConflict = {}
+for t in range(T):
+    for s in range(n_slots):
+        for n in range(N_nurses):
+            NurseConflict[(t, s, n)] = CTS.addVar(
+                vtype=GRB.CONTINUOUS, lb=0, name=f"NC_{t}_{s}_{n}")
+
 for t in range(T):
     for s in range(n_slots):
         for n in range(N_nurses):
@@ -257,8 +264,8 @@ for t in range(T):
                      for q in feasible_start_slots[i]
                      if s in nurse_occ[(i, q)]]
             if terms:
-                CTS.addConstr(quicksum(terms) <= 1,
-                              f"NurseSlot_{t}_{s}_{n}")
+                CTS.addConstr(NurseConflict[(t, s, n)] >= quicksum(terms) - 1)
+                CTS.addConstr(NurseConflict[(t, s, n)] >= 0)
 
 # 午休時間護士不能工作
 for t in range(T):
@@ -273,9 +280,13 @@ for t in range(T):
                               f"NurseLunch_{t}_{s}_{n}")
 
 # 目標函數
-penalty_weight = 2
+nurse_penalty = 5   # 同一護士同時服務 2 人的懲罰（設較高)
+total_penalty = 2    # 兩護士都忙還有第 3 人的懲罰
+
 CTS.setObjective(
-    MaxSize + penalty_weight * quicksum(Conflict.values()),
+    MaxSize
+    + nurse_penalty * quicksum(NurseConflict.values())
+    + total_penalty * quicksum(Conflict.values()),
     GRB.MINIMIZE
 )
 
@@ -304,9 +315,18 @@ if CTS.SolCount == 0:
     exit()  # 直接終止，避免後續 .X 存取造成 crash
 
 # 統計衝突資訊
+
+# 每護士個別衝突
+nurse_conflict_slots = 0
+for t in range(T):
+    for s in range(n_slots):
+        for n in range(N_nurses):
+            if NurseConflict[(t, s, n)].X > 0.5:
+                nurse_conflict_slots += 1
+
+# 兩護士都忙的衝突
 conflict_slots = 0
 total_conflict_amount = 0
-
 for t in range(T):
     for s in range(n_slots):
         val = Conflict[(t, s)].X
@@ -314,12 +334,13 @@ for t in range(T):
             conflict_slots += 1
             total_conflict_amount += val
 
-print(f"有衝突的 slot 數量：{conflict_slots}")
-print(f"衝突總人次：{total_conflict_amount:.0f}")
-
+print(f"同護士衝突 slot 數：{nurse_conflict_slots}")
+print(f"雙護士滿載衝突 slot 數：{conflict_slots}")
+print(f"雙護士滿載衝突總人次：{total_conflict_amount:.0f}")
 # 同步寫入 txt 檔
-print(f"有衝突的 slot 數量：{conflict_slots}", file=f)
-print(f"衝突總人次：{total_conflict_amount:.0f}", file=f)
+print(f"同護士衝突 slot 數：{nurse_conflict_slots}", file=f)
+print(f"雙護士滿載衝突 slot 數：{conflict_slots}", file=f)
+print(f"雙護士滿載衝突總人次：{total_conflict_amount:.0f}", file=f)
 
 # 生成排程
 schedule = {}
