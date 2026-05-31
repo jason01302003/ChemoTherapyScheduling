@@ -6,9 +6,10 @@ import random
 from gurobipy import *
 
 # 參數
-P = 20            # 病人數
+P = 40            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
+N_nurses = 2       # 護士人數
 prob = 0.3
 # 設定時間，並切分為slots
 slot_length = 15
@@ -26,8 +27,8 @@ lunch_end_slot = (lunch_end_min - work_start) // slot_length  # = 16
 n_slots = max_clock // slot_length
 
 random.seed(17)
-fname = rf"D:\桌面\OTA_paper\ChemoTherapyScheduling\SCP\SCP" + \
-    str(P)+"-"+str(3)+".txt"
+fname = rf"D:\桌面\OTA_paper\ChemoTherapyScheduling\SCP\SCPdm" + \
+    str(P)+"-"+str(1)+".txt"
 path = fname
 f = open(path, 'w')
 
@@ -46,8 +47,8 @@ for i in range(P):
             treatment_list.append(0)
     V.append(treatment_list)
     Last_Position.append(last)
-# 隨機每日最大容量
-K = [random.randint(3, 10) for _ in range(T)]
+# 隨機每日最大容量，要隨P調整
+K = [random.randint(6, 16) for _ in range(T)]
 
 # Pattern生成和對照
 Pattern = []
@@ -177,8 +178,9 @@ Z = {}
 for i in range(P):
     for t in range(T):
         for q in feasible_start_slots[i]:
-            Z[(i, t, q)] = CTS.addVar(vtype=GRB.BINARY,
-                                      name=f"Z_{i}_{t}_{q}")  # 病人 i 在 t 天從 slot q 開始治療
+            for n in range(N_nurses):
+                Z[(i, t, q, n)] = CTS.addVar(vtype=GRB.BINARY,
+                                             name=f"Z_{i}_{t}_{q}_{n}")  # 病人 i 在 t 天從 slot q 開始治療，並且由nurse n 照顧
 CTS.update()
 
 # 約束 (A) 只開始一次
@@ -217,7 +219,9 @@ for t in range(T):
 # 約束 (D) Z and Y link 如果有治療，則一定要選一個開始時間
 for i in range(P):
     for t in range(T):
-        zs = [Z[(i, t, q)] for q in feasible_start_slots[i]]
+        zs = [Z[(i, t, q, n)]
+              for q in feasible_start_slots[i]
+              for n in range(N_nurses)]
         if zs:
             CTS.addConstr(quicksum(zs) == Y[i, t])
         else:
@@ -237,26 +241,43 @@ for t in range(T):
         for i in range(P):
             for q in feasible_start_slots[i]:
                 if s in nurse_occ[(i, q)]:
-                    terms.append(Z[(i, t, q)])
+                    for n in range(N_nurses):
+                        terms.append(Z[(i, t, q, n)])
         if terms:
-            CTS.addConstr(Conflict[(t, s)] >= quicksum(terms) - 1)
+            CTS.addConstr(Conflict[(t, s)] >= quicksum(
+                terms) - N_nurses)  # 改為 N_nurses
             CTS.addConstr(Conflict[(t, s)] >= 0)
+            
+# NurseSlot 硬性限制（每位護士每 slot ≤ 1 人）
+for t in range(T):
+    for s in range(n_slots):
+        for n in range(N_nurses):
+            terms = [Z[(i, t, q, n)]
+                     for i in range(P)
+                     for q in feasible_start_slots[i]
+                     if s in nurse_occ[(i, q)]]
+            if terms:
+                CTS.addConstr(quicksum(terms) <= 1,
+                              f"NurseSlot_{t}_{s}_{n}")
 
 # 午休時間護士不能工作
 for t in range(T):
     for s in range(lunch_start_slot, lunch_end_slot):
-        terms = [Z[(i, t, q)]
-                 for i in range(P)
-                 for q in feasible_start_slots[i]
-                 if s in nurse_occ[(i, q)]]
-        if terms:
-            CTS.addConstr(quicksum(terms) == 0, f"NurseLunch_{t}_{s}")
+        for n in range(N_nurses):
+            terms = [Z[(i, t, q, n)]
+                     for i in range(P)
+                     for q in feasible_start_slots[i]
+                     if s in nurse_occ[(i, q)]]
+            if terms:
+                CTS.addConstr(quicksum(terms) == 0,
+                              f"NurseLunch_{t}_{s}_{n}")
+
 # 目標函數
-# 讓 1 次衝突的代價 ≈ MaxSize 增加 1 的代價
-# Conflict_total 期望值大約是 MaxSize 的幾倍 → penalty 設在 1~5 較合理
-penalty_weight = 2  # 衝突允許的程度
-CTS.setObjective(MaxSize + penalty_weight *
-                 quicksum(Conflict.values()), GRB.MINIMIZE)
+penalty_weight = 2
+CTS.setObjective(
+    MaxSize + penalty_weight * quicksum(Conflict.values()),
+    GRB.MINIMIZE
+)
 
 # 求解
 starttime = time.time()
@@ -314,21 +335,27 @@ for i in range(P):
     for t in range(T):
         if Y[i, t].X > 0.5:
             chosen_q = None
+            chosen_n = None
             for q in feasible_start_slots[i]:
-                if Z[(i, t, q)].X > 0.5:
-                    chosen_q = q
+                for n in range(N_nurses):
+                    if Z[(i, t, q, n)].X > 0.5:
+                        chosen_q = q
+                        chosen_n = n
+                        break
+                if chosen_q is not None:
                     break
             if chosen_q is None:
-                chosen_q = feasible_start_slots[i][0] if feasible_start_slots[i] else 0
+                chosen_q = feasible_start_slots[i][0]
+                chosen_n = 0
             start_min = work_start + chosen_q * slot_length
             day_tasks = []
             for k_idx, k in enumerate(tasks):
                 dur = task_time_map[k][str(Pattern[i][k_idx])]
                 end_min = start_min + dur
-                day_tasks.append([t, k, start_min, end_min])
+                day_tasks.append([t, k, start_min, end_min, chosen_n])
                 start_min = end_min
             schedule[i].append(day_tasks)
-            
+
 # 印出 schedule
 for i in range(P):
     print(f"Patient {i:2d}:", end="", file=f)
@@ -336,7 +363,7 @@ for i in range(P):
     print(f"Patient {i:2d}:")
     print("\n")
     for day_tasks in schedule[i]:
-        for day, task, s_min, e_min in day_tasks:
+        for day, task, s_min, e_min, nurse_id in day_tasks:
             s_hour = s_min // 60
             s_m = s_min % 60
             e_hour = e_min // 60
@@ -350,15 +377,27 @@ for i in range(P):
 f.close()
 
 # 輸出甘特圖
+# 雙護士顏色配置：同 task 同色系，深淺區分護士
 task_colors = {
-    "task1": "#BDE3FF",  # 很淺藍
-    "task2": "#FFB6C1",  # 粉紅
-    "task3": "#5DADE2",  # 亮藍
-    "task4": "#BD6162",  # 亮紅
-    "task5": "#1F77B4",  # 深藍
+    # Nurse 0 藍色為主色系
+    0: {
+        "task1": "#BDE3FF",  # 很淺藍
+        "task2": "#FFB6C1",  # 粉紅（不需護士，兩位護士同色）
+        "task3": "#5DADE2",  # 亮藍
+        "task4": "#BD6162",  # 亮紅（不需護士，兩位護士同色）
+        "task5": "#1F77B4",  # 深藍
+    },
+    # Nurse 1 綠色為主色系
+    1: {
+        "task1": "#A5F8A8",  # 淺綠
+        "task2": "#FFB6C1",  # 粉紅（同上，不需護士）
+        "task3": "#2EC153",  # 中深綠
+        "task4": "#BD6162",  # 亮紅（同上，不需護士）
+        "task5": "#0A6B22",  # 極深綠
+    }
 }
 
-output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_20_3"
+output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_dm_40_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
@@ -379,42 +418,34 @@ for day in range(T):
         continue
 
     # 繪製甘特圖
+    nurse_colors = {0: "skyblue", 1: "lightgreen"}  # 護士 0 藍色，護士 1 綠色
+
     for pos, i in enumerate(patient_indices):
         for day_tasks in schedule[i]:
             if day_tasks[0][0] == day:
+                for _, task, s_min, e_min, nurse_id in day_tasks:
 
-                for _, task, s_min, e_min in day_tasks:
-
-                    # 從 s_min 開始，每 15 分鐘畫一段 bar
+                    # 逐 slot 繪製，衝突 slot 標橘色
                     current = s_min
                     while current < e_min:
                         next_t = min(current + slot_length, e_min)
-
-                        # 計算 slot index
                         t_slot = (current - work_start) // slot_length
 
-                        # 判斷衝突
+                        # 判斷是否有衝突
                         has_conflict = False
                         if 0 <= t_slot < n_slots:
                             if Conflict[(day, t_slot)].X > 0.5:
                                 has_conflict = True
 
-                        # 顏色邏輯
+                        # 顏色邏輯：護士任務衝突 → 橘色
                         if has_conflict and task in ["task1", "task3", "task5"]:
                             color = "orange"
                         else:
-                            color = task_colors[task]
+                            color = task_colors[nurse_id][task]
 
-                        # 畫出 15 分鐘 bar
-                        ax.barh(
-                            y=pos,
-                            width=next_t - current,
-                            left=current,
-                            height=0.4,
-                            color=color,
-                            edgecolor="black"
-                        )
-
+                        ax.barh(y=pos, width=next_t - current,
+                                left=current, height=0.4,
+                                color=color, edgecolor="black")
                         current = next_t
 
     # 午休區域標記（畫在所有病人的y上）
@@ -438,11 +469,18 @@ for day in range(T):
     ax.set_xticklabels(labels, rotation=90)
 
     # 圖例
-    patches = [mpatches.Patch(color=color, label=task)
-               for task, color in task_colors.items()]
-    patches.append(mpatches.Patch(color="orange",    label="Nurse conflict"))
-    patches.append(mpatches.Patch(color="lightgray",
-                   label="Lunch Break", alpha=0.5))
+    patches = [
+        mpatches.Patch(color="#BDE3FF", label="Nurse 0 - task1"),
+        mpatches.Patch(color="#5DADE2", label="Nurse 0 - task3"),
+        mpatches.Patch(color="#1F77B4", label="Nurse 0 - task5"),
+        mpatches.Patch(color="#A5F8A8", label="Nurse 1 - task1"),
+        mpatches.Patch(color="#2EC153", label="Nurse 1 - task3"),
+        mpatches.Patch(color="#0A6B22", label="Nurse 1 - task5"),
+        mpatches.Patch(color="#FFB6C1", label="task2 (no nurse)"),
+        mpatches.Patch(color="#BD6162", label="task4 (no nurse)"),
+        mpatches.Patch(color="orange",   label="Nurse conflict"),
+        mpatches.Patch(color="lightgray", label="Lunch Break")
+    ]
     ax.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc='upper left')
 
     ax.set_title(f"Chemotherapy Schedule - Day {day}")
