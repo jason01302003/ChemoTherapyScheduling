@@ -48,7 +48,7 @@ for i in range(P):
     V.append(treatment_list)
     Last_Position.append(last)
 # 隨機每日最大容量，要隨P調整
-K = [random.randint(6, 16) for _ in range(T)]
+K = [random.randint(10, 16) for _ in range(T)]
 
 # Pattern生成和對照
 Pattern = []
@@ -168,6 +168,7 @@ CTS = Model("ChemoTherapyScheduling")
 CTS.setParam('OutputFlag', 1)
 CTS.setParam('TimeLimit', 1200)
 CTS.setParam('MIPGap', 0.01)
+CTS.setParam('Heuristics', 0.5)
 CTS.setParam('Threads', 6)
 
 X = CTS.addVars(P, T, vtype=GRB.BINARY, name="X")
@@ -280,7 +281,7 @@ for t in range(T):
                               f"NurseLunch_{t}_{s}_{n}")
 
 # 目標函數
-nurse_penalty = 5   # 同一護士同時服務 2 人的懲罰（設較高)
+nurse_penalty = 4   # 同一護士同時服務 2 人的懲罰（設較高)
 total_penalty = 2    # 兩護士都忙還有第 3 人的懲罰
 
 CTS.setObjective(
@@ -312,7 +313,6 @@ if CTS.SolCount == 0:
     print("未找到可行解，程式終止")
     print("未找到可行解，程式終止", file=f)
     f.close()
-    exit()  # 直接終止，避免後續 .X 存取造成 crash
 
 # 統計衝突資訊
 
@@ -337,6 +337,7 @@ for t in range(T):
 print(f"同護士衝突 slot 數：{nurse_conflict_slots}")
 print(f"雙護士滿載衝突 slot 數：{conflict_slots}")
 print(f"雙護士滿載衝突總人次：{total_conflict_amount:.0f}")
+
 # 同步寫入 txt 檔
 print(f"同護士衝突 slot 數：{nurse_conflict_slots}", file=f)
 print(f"雙護士滿載衝突 slot 數：{conflict_slots}", file=f)
