@@ -27,7 +27,7 @@ n_slots = max_clock // slot_length
 
 random.seed(17)
 fname = rf"D:\桌面\OTA_paper\ChemoTherapyScheduling\SCP\SCP" + \
-    str(P)+"-"+str(3)+".txt"
+    str(P)+"-"+str(1)+".txt"
 path = fname
 f = open(path, 'w')
 
@@ -358,7 +358,7 @@ task_colors = {
     "task5": "#1F77B4",  # 深藍
 }
 
-output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_20_3"
+output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_20_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
