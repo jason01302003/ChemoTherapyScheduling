@@ -1,3 +1,5 @@
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 import os
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
@@ -6,7 +8,7 @@ import random
 from gurobipy import *
 
 # 參數
-P = 40            # 病人數
+P = 45            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
 N_nurses = 2       # 護士人數
@@ -26,9 +28,9 @@ lunch_end_slot = (lunch_end_min - work_start) // slot_length  # = 16
 # 總共的 slot 數量
 n_slots = max_clock // slot_length
 
-random.seed(17)
-fname = rf"D:\桌面\OTA_paper\ChemoTherapyScheduling\SCP\SCPdm" + \
-    str(P)+"-"+str(1)+".txt"
+random.seed(1)
+fname = rf"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\SCP\SCPdm" + \
+    str(P)+"-"+str(2)+".txt"
 path = fname
 f = open(path, 'w')
 
@@ -403,7 +405,7 @@ f.close()
 task_colors = {
     # Nurse 0 藍色為主色系
     0: {
-        "task1": "#BDE3FF",  # 很淺藍
+        "task1": "#BDE3FF",  # 淺藍
         "task2": "#FFB6C1",  # 粉紅（不需護士，兩位護士同色）
         "task3": "#5DADE2",  # 亮藍
         "task4": "#BD6162",  # 亮紅（不需護士，兩位護士同色）
@@ -419,7 +421,7 @@ task_colors = {
     }
 }
 
-output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_dm_40_1"
+output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_dm_45_2"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):

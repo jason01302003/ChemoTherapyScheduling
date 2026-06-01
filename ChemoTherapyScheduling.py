@@ -25,9 +25,9 @@ lunch_end_slot = (lunch_end_min - work_start) // slot_length  # = 16
 # 總共的 slot 數量
 n_slots = max_clock // slot_length
 
-random.seed(17)
-fname = rf"D:\桌面\OTA_paper\ChemoTherapyScheduling\SCP\SCP" + \
-    str(P)+"-"+str(1)+".txt"
+random.seed(1)
+fname = rf"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\SCP\SCP" + \
+    str(P)+"-"+str(2)+".txt"
 path = fname
 f = open(path, 'w')
 
@@ -47,7 +47,7 @@ for i in range(P):
     V.append(treatment_list)
     Last_Position.append(last)
 # 隨機每日最大容量
-K = [random.randint(3, 10) for _ in range(T)]
+K = [random.randint(4, 10) for _ in range(T)]
 
 # Pattern生成和對照
 Pattern = []
@@ -167,6 +167,7 @@ CTS = Model("ChemoTherapyScheduling")
 CTS.setParam('OutputFlag', 1)
 CTS.setParam('TimeLimit', 1200)
 CTS.setParam('MIPGap', 0.01)
+CTS.setParam('Heuristics', 0.5)
 CTS.setParam('Threads', 6)
 
 X = CTS.addVars(P, T, vtype=GRB.BINARY, name="X")
@@ -358,7 +359,7 @@ task_colors = {
     "task5": "#1F77B4",  # 深藍
 }
 
-output_folder = r"D:\桌面\OTA_paper\ChemoTherapyScheduling\gantt_days_20_1"
+output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_20_2"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
