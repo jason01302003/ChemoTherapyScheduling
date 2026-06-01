@@ -6,7 +6,7 @@ import random
 from gurobipy import *
 
 # 參數
-P = 20            # 病人數
+P = 15            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
 prob = 0.3
@@ -25,9 +25,9 @@ lunch_end_slot = (lunch_end_min - work_start) // slot_length  # = 16
 # 總共的 slot 數量
 n_slots = max_clock // slot_length
 
-random.seed(1)
+random.seed(17)
 fname = rf"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\SCP\SCP" + \
-    str(P)+"-"+str(2)+".txt"
+    str(P)+"-"+str(1)+".txt"
 path = fname
 f = open(path, 'w')
 
@@ -359,7 +359,7 @@ task_colors = {
     "task5": "#1F77B4",  # 深藍
 }
 
-output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_20_2"
+output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_15_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
