@@ -1,0 +1,2662 @@
+10171215111616241917252120221216151619232521102510132320201223162525242515181922
+
+Patient  0: 1001000011000100100110001011
+
+Pattern   0: 23121
+
+Patient  1: 0011101100010010000000000000
+
+Pattern   1: 16121
+
+Patient  2: 1100100000000001100001000001
+
+Pattern   2: 24121
+
+Patient  3: 0000100100000000100100000000
+
+Pattern   3: 23212
+
+Patient  4: 1110000010011101100110110000
+
+Pattern   4: 23121
+
+Patient  5: 1001100100111010001000100000
+
+Pattern   5: 26111
+
+Patient  6: 1100000000110100010000001001
+
+Pattern   6: 24122
+
+Patient  7: 1010000110000100000000101101
+
+Pattern   7: 23221
+
+Patient  8: 0000010000101110000000011100
+
+Pattern   8: 24121
+
+Patient  9: 0010010110110011101000011010
+
+Pattern   9: 14131
+
+Patient 10: 1101000100011000001001110000
+
+Pattern  10: 16121
+
+Patient 11: 0000000000001111011010001001
+
+Pattern  11: 13112
+
+Patient 12: 0100001001010100000001010011
+
+Pattern  12: 26121
+
+Patient 13: 0000000011000101110000110000
+
+Pattern  13: 14121
+
+Patient 14: 0010010000101100100000000000
+
+Pattern  14: 24121
+
+Patient 15: 0011100100001010001001000000
+
+Pattern  15: 14111
+
+Patient 16: 0000101001001110110100011010
+
+Pattern  16: 14132
+
+Patient 17: 1000000000011010000010000001
+
+Pattern  17: 27121
+
+Patient 18: 0000000001110000000000010001
+
+Pattern  18: 14112
+
+Patient 19: 0000000000000000000000010001
+
+Pattern  19: 22112
+
+Patient 20: 0001000001000000110110000010
+
+Pattern  20: 22121
+
+Patient 21: 0010101000100010000001010000
+
+Pattern  21: 11111
+
+Patient 22: 0101100010001001110011000000
+
+Pattern  22: 13112
+
+Patient 23: 1010001100010000010000000001
+
+Pattern  23: 14121
+
+Patient 24: 0110101000110111110000000001
+
+Pattern  24: 12121
+
+Patient 25: 1000000100100000001010001100
+
+Pattern  25: 16122
+
+Patient 26: 0010010001010110001000001000
+
+Pattern  26: 15111
+
+Patient 27: 0001000000000110010010001000
+
+Pattern  27: 14121
+
+Patient 28: 0010001000000000100000000000
+
+Pattern  28: 13212
+
+Patient 29: 0011000100110111001100101000
+
+Pattern  29: 23111
+
+Patient 30: 1000000000000110000000010011
+
+Pattern  30: 11111
+
+Patient 31: 0110000000000000000000100000
+
+Pattern  31: 16122
+
+Patient 32: 0000000000000001001110010100
+
+Pattern  32: 13132
+
+Patient 33: 0000000011011100000100000001
+
+Pattern  33: 24112
+
+Patient 34: 0001110000010010010100100001
+
+Pattern  34: 24232
+
+Patient 35: 0001000100001000011001100000
+
+Pattern  35: 14121
+
+Patient 36: 1010110000100010000000011110
+
+Pattern  36: 12122
+
+Patient 37: 0001100011001100000101100110
+
+Pattern  37: 22121
+
+Patient 38: 1011110001010000000000000000
+
+Pattern  38: 14121
+
+Patient 39: 0001011001100010000000100101
+
+Pattern  39: 23122
+
+Patient 40: 0100001000101000100000000000
+
+Pattern  40: 25111
+
+Patient 41: 0010101111001000001010010000
+
+Pattern  41: 17211
+
+Patient 42: 0000100100000100100000100010
+
+Pattern  42: 24232
+
+Patient 43: 1000000000100000101111000110
+
+Pattern  43: 24112
+
+Patient 44: 0010000001000001000100000000
+
+Pattern  44: 13131
+
+Patient 45: 0010100000011001000000000100
+
+Pattern  45: 15121
+
+Patient 46: 1001000000110101111001000001
+
+Pattern  46: 16111
+
+Patient 47: 0101000010110100001000101010
+
+Pattern  47: 13211
+
+Patient 48: 0001100000100110100000101111
+
+Pattern  48: 14222
+
+Patient 49: 0000100000000110100110000101
+
+Pattern  49: 13221
+
+Patient 50: 0000100100001000110110000000
+
+Pattern  50: 13111
+
+Patient 51: 0000000000010010000000101000
+
+Pattern  51: 22111
+
+Patient 52: 0000000001101011000000110010
+
+Pattern  52: 13122
+
+Patient 53: 0001101110111000000100010001
+
+Pattern  53: 14121
+
+Patient 54: 0001000001110111100001010110
+
+Pattern  54: 24211
+
+Run time: 97.40 seconds
+求解狀態：最優解，找到解的數量：9
+同護士衝突 slot 數：0
+三護士滿載衝突 slot 數：0
+三護士滿載衝突總人次：0
+Patient  0:
+  Day 1: task1 10:45 - 11:15
+  Day 1: task2 11:15 - 14:15
+  Day 1: task3 14:15 - 14:30
+  Day 1: task4 14:30 - 15:00
+  Day 1: task5 15:00 - 15:15
+  Day 12: task1 11:30 - 12:00
+  Day 12: task2 12:00 - 15:00
+  Day 12: task3 15:00 - 15:15
+  Day 12: task4 15:15 - 15:45
+  Day 12: task5 15:45 - 16:00
+  Day 15: task1 10:45 - 11:15
+  Day 15: task2 11:15 - 14:15
+  Day 15: task3 14:15 - 14:30
+  Day 15: task4 14:30 - 15:00
+  Day 15: task5 15:00 - 15:15
+  Day 20: task1 10:30 - 11:00
+  Day 20: task2 11:00 - 14:00
+  Day 20: task3 14:00 - 14:15
+  Day 20: task4 14:15 - 14:45
+  Day 20: task5 14:45 - 15:00
+  Day 21: task1 11:15 - 11:45
+  Day 21: task2 11:45 - 14:45
+  Day 21: task3 14:45 - 15:00
+  Day 21: task4 15:00 - 15:30
+  Day 21: task5 15:30 - 15:45
+  Day 25: task1 10:15 - 10:45
+  Day 25: task2 10:45 - 13:45
+  Day 25: task3 13:45 - 14:00
+  Day 25: task4 14:00 - 14:30
+  Day 25: task5 14:30 - 14:45
+  Day 28: task1 10:00 - 10:30
+  Day 28: task2 10:30 - 13:30
+  Day 28: task3 13:30 - 13:45
+  Day 28: task4 13:45 - 14:15
+  Day 28: task5 14:15 - 14:30
+  Day 31: task1 11:15 - 11:45
+  Day 31: task2 11:45 - 14:45
+  Day 31: task3 14:45 - 15:00
+  Day 31: task4 15:00 - 15:30
+  Day 31: task5 15:30 - 15:45
+  Day 32: task1 10:00 - 10:30
+  Day 32: task2 10:30 - 13:30
+  Day 32: task3 13:30 - 13:45
+  Day 32: task4 13:45 - 14:15
+  Day 32: task5 14:15 - 14:30
+  Day 35: task1 10:30 - 11:00
+  Day 35: task2 11:00 - 14:00
+  Day 35: task3 14:00 - 14:15
+  Day 35: task4 14:15 - 14:45
+  Day 35: task5 14:45 - 15:00
+  Day 36: task1 11:15 - 11:45
+  Day 36: task2 11:45 - 14:45
+  Day 36: task3 14:45 - 15:00
+  Day 36: task4 15:00 - 15:30
+  Day 36: task5 15:30 - 15:45
+  Day 38: task1 10:30 - 11:00
+  Day 38: task2 11:00 - 14:00
+  Day 38: task3 14:00 - 14:15
+  Day 38: task4 14:15 - 14:45
+  Day 38: task5 14:45 - 15:00
+  Day 39: task1 09:30 - 10:00
+  Day 39: task2 10:00 - 13:00
+  Day 39: task3 13:00 - 13:15
+  Day 39: task4 13:15 - 13:45
+  Day 39: task5 13:45 - 14:00
+Patient  1:
+  Day 2: task1 11:45 - 12:00
+  Day 2: task2 12:00 - 15:45
+  Day 2: task3 15:45 - 16:00
+  Day 2: task4 16:00 - 16:30
+  Day 2: task5 16:30 - 16:45
+  Day 3: task1 11:00 - 11:15
+  Day 3: task2 11:15 - 15:00
+  Day 3: task3 15:00 - 15:15
+  Day 3: task4 15:15 - 15:45
+  Day 3: task5 15:45 - 16:00
+  Day 4: task1 11:15 - 11:30
+  Day 4: task2 11:30 - 15:15
+  Day 4: task3 15:15 - 15:30
+  Day 4: task4 15:30 - 16:00
+  Day 4: task5 16:00 - 16:15
+  Day 6: task1 11:45 - 12:00
+  Day 6: task2 12:00 - 15:45
+  Day 6: task3 15:45 - 16:00
+  Day 6: task4 16:00 - 16:30
+  Day 6: task5 16:30 - 16:45
+  Day 7: task1 11:45 - 12:00
+  Day 7: task2 12:00 - 15:45
+  Day 7: task3 15:45 - 16:00
+  Day 7: task4 16:00 - 16:30
+  Day 7: task5 16:30 - 16:45
+  Day 11: task1 09:30 - 09:45
+  Day 11: task2 09:45 - 13:30
+  Day 11: task3 13:30 - 13:45
+  Day 11: task4 13:45 - 14:15
+  Day 11: task5 14:15 - 14:30
+  Day 14: task1 11:45 - 12:00
+  Day 14: task2 12:00 - 15:45
+  Day 14: task3 15:45 - 16:00
+  Day 14: task4 16:00 - 16:30
+  Day 14: task5 16:30 - 16:45
+Patient  2:
+  Day 5: task1 11:30 - 12:00
+  Day 5: task2 12:00 - 15:15
+  Day 5: task3 15:15 - 15:30
+  Day 5: task4 15:30 - 16:00
+  Day 5: task5 16:00 - 16:15
+  Day 6: task1 09:30 - 10:00
+  Day 6: task2 10:00 - 13:15
+  Day 6: task3 13:15 - 13:30
+  Day 6: task4 13:30 - 14:00
+  Day 6: task5 14:00 - 14:15
+  Day 8: task1 09:15 - 09:45
+  Day 8: task2 09:45 - 13:00
+  Day 8: task3 13:00 - 13:15
+  Day 8: task4 13:15 - 13:45
+  Day 8: task5 13:45 - 14:00
+  Day 9: task1 10:45 - 11:15
+  Day 9: task2 11:15 - 14:30
+  Day 9: task3 14:30 - 14:45
+  Day 9: task4 14:45 - 15:15
+  Day 9: task5 15:15 - 15:30
+  Day 20: task1 09:30 - 10:00
+  Day 20: task2 10:00 - 13:15
+  Day 20: task3 13:15 - 13:30
+  Day 20: task4 13:30 - 14:00
+  Day 20: task5 14:00 - 14:15
+  Day 21: task1 10:30 - 11:00
+  Day 21: task2 11:00 - 14:15
+  Day 21: task3 14:15 - 14:30
+  Day 21: task4 14:30 - 15:00
+  Day 21: task5 15:00 - 15:15
+  Day 26: task1 10:45 - 11:15
+  Day 26: task2 11:15 - 14:30
+  Day 26: task3 14:30 - 14:45
+  Day 26: task4 14:45 - 15:15
+  Day 26: task5 15:15 - 15:30
+  Day 32: task1 09:30 - 10:00
+  Day 32: task2 10:00 - 13:15
+  Day 32: task3 13:15 - 13:30
+  Day 32: task4 13:30 - 14:00
+  Day 32: task5 14:00 - 14:15
+Patient  3:
+  Day 5: task1 09:30 - 10:00
+  Day 5: task2 10:00 - 13:00
+  Day 5: task3 13:00 - 13:30
+  Day 5: task4 13:30 - 13:45
+  Day 5: task5 13:45 - 14:15
+  Day 8: task1 11:30 - 12:00
+  Day 8: task2 12:00 - 15:00
+  Day 8: task3 15:00 - 15:30
+  Day 8: task4 15:30 - 15:45
+  Day 8: task5 15:45 - 16:15
+  Day 17: task1 11:30 - 12:00
+  Day 17: task2 12:00 - 15:00
+  Day 17: task3 15:00 - 15:30
+  Day 17: task4 15:30 - 15:45
+  Day 17: task5 15:45 - 16:15
+  Day 20: task1 09:30 - 10:00
+  Day 20: task2 10:00 - 13:00
+  Day 20: task3 13:00 - 13:30
+  Day 20: task4 13:30 - 13:45
+  Day 20: task5 13:45 - 14:15
+Patient  4:
+  Day 0: task1 09:30 - 10:00
+  Day 0: task2 10:00 - 13:00
+  Day 0: task3 13:00 - 13:15
+  Day 0: task4 13:15 - 13:45
+  Day 0: task5 13:45 - 14:00
+  Day 15: task1 10:00 - 10:30
+  Day 15: task2 10:30 - 13:30
+  Day 15: task3 13:30 - 13:45
+  Day 15: task4 13:45 - 14:15
+  Day 15: task5 14:15 - 14:30
+  Day 16: task1 11:00 - 11:30
+  Day 16: task2 11:30 - 14:30
+  Day 16: task3 14:30 - 14:45
+  Day 16: task4 14:45 - 15:15
+  Day 16: task5 15:15 - 15:30
+  Day 17: task1 10:00 - 10:30
+  Day 17: task2 10:30 - 13:30
+  Day 17: task3 13:30 - 13:45
+  Day 17: task4 13:45 - 14:15
+  Day 17: task5 14:15 - 14:30
+  Day 23: task1 10:30 - 11:00
+  Day 23: task2 11:00 - 14:00
+  Day 23: task3 14:00 - 14:15
+  Day 23: task4 14:15 - 14:45
+  Day 23: task5 14:45 - 15:00
+  Day 26: task1 10:00 - 10:30
+  Day 26: task2 10:30 - 13:30
+  Day 26: task3 13:30 - 13:45
+  Day 26: task4 13:45 - 14:15
+  Day 26: task5 14:15 - 14:30
+  Day 27: task1 09:45 - 10:15
+  Day 27: task2 10:15 - 13:15
+  Day 27: task3 13:15 - 13:30
+  Day 27: task4 13:30 - 14:00
+  Day 27: task5 14:00 - 14:15
+  Day 28: task1 11:15 - 11:45
+  Day 28: task2 11:45 - 14:45
+  Day 28: task3 14:45 - 15:00
+  Day 28: task4 15:00 - 15:30
+  Day 28: task5 15:30 - 15:45
+  Day 29: task1 10:15 - 10:45
+  Day 29: task2 10:45 - 13:45
+  Day 29: task3 13:45 - 14:00
+  Day 29: task4 14:00 - 14:30
+  Day 29: task5 14:30 - 14:45
+  Day 30: task1 09:30 - 10:00
+  Day 30: task2 10:00 - 13:00
+  Day 30: task3 13:00 - 13:15
+  Day 30: task4 13:15 - 13:45
+  Day 30: task5 13:45 - 14:00
+  Day 31: task1 11:15 - 11:45
+  Day 31: task2 11:45 - 14:45
+  Day 31: task3 14:45 - 15:00
+  Day 31: task4 15:00 - 15:30
+  Day 31: task5 15:30 - 15:45
+  Day 34: task1 10:30 - 11:00
+  Day 34: task2 11:00 - 14:00
+  Day 34: task3 14:00 - 14:15
+  Day 34: task4 14:15 - 14:45
+  Day 34: task5 14:45 - 15:00
+  Day 35: task1 09:30 - 10:00
+  Day 35: task2 10:00 - 13:00
+  Day 35: task3 13:00 - 13:15
+  Day 35: task4 13:15 - 13:45
+  Day 35: task5 13:45 - 14:00
+  Day 37: task1 10:00 - 10:30
+  Day 37: task2 10:30 - 13:30
+  Day 37: task3 13:30 - 13:45
+  Day 37: task4 13:45 - 14:15
+  Day 37: task5 14:15 - 14:30
+  Day 38: task1 11:15 - 11:45
+  Day 38: task2 11:45 - 14:45
+  Day 38: task3 14:45 - 15:00
+  Day 38: task4 15:00 - 15:30
+  Day 38: task5 15:30 - 15:45
+Patient  5:
+  Day 0: task1 11:00 - 11:30
+  Day 0: task2 11:30 - 15:15
+  Day 0: task3 15:15 - 15:30
+  Day 0: task4 15:30 - 15:45
+  Day 0: task5 15:45 - 16:00
+  Day 3: task1 10:30 - 11:00
+  Day 3: task2 11:00 - 14:45
+  Day 3: task3 14:45 - 15:00
+  Day 3: task4 15:00 - 15:15
+  Day 3: task5 15:15 - 15:30
+  Day 4: task1 09:00 - 09:30
+  Day 4: task2 09:30 - 13:15
+  Day 4: task3 13:15 - 13:30
+  Day 4: task4 13:30 - 13:45
+  Day 4: task5 13:45 - 14:00
+  Day 7: task1 09:00 - 09:30
+  Day 7: task2 09:30 - 13:15
+  Day 7: task3 13:15 - 13:30
+  Day 7: task4 13:30 - 13:45
+  Day 7: task5 13:45 - 14:00
+  Day 10: task1 11:00 - 11:30
+  Day 10: task2 11:30 - 15:15
+  Day 10: task3 15:15 - 15:30
+  Day 10: task4 15:30 - 15:45
+  Day 10: task5 15:45 - 16:00
+  Day 11: task1 10:45 - 11:15
+  Day 11: task2 11:15 - 15:00
+  Day 11: task3 15:00 - 15:15
+  Day 11: task4 15:15 - 15:30
+  Day 11: task5 15:30 - 15:45
+  Day 12: task1 09:45 - 10:15
+  Day 12: task2 10:15 - 14:00
+  Day 12: task3 14:00 - 14:15
+  Day 12: task4 14:15 - 14:30
+  Day 12: task5 14:30 - 14:45
+  Day 14: task1 09:00 - 09:30
+  Day 14: task2 09:30 - 13:15
+  Day 14: task3 13:15 - 13:30
+  Day 14: task4 13:30 - 13:45
+  Day 14: task5 13:45 - 14:00
+  Day 18: task1 09:45 - 10:15
+  Day 18: task2 10:15 - 14:00
+  Day 18: task3 14:00 - 14:15
+  Day 18: task4 14:15 - 14:30
+  Day 18: task5 14:30 - 14:45
+  Day 22: task1 09:30 - 10:00
+  Day 22: task2 10:00 - 13:45
+  Day 22: task3 13:45 - 14:00
+  Day 22: task4 14:00 - 14:15
+  Day 22: task5 14:15 - 14:30
+Patient  6:
+  Day 0: task1 10:15 - 10:45
+  Day 0: task2 10:45 - 14:00
+  Day 0: task3 14:00 - 14:15
+  Day 0: task4 14:15 - 14:45
+  Day 0: task5 14:45 - 15:15
+  Day 1: task1 10:00 - 10:30
+  Day 1: task2 10:30 - 13:45
+  Day 1: task3 13:45 - 14:00
+  Day 1: task4 14:00 - 14:30
+  Day 1: task5 14:30 - 15:00
+  Day 7: task1 09:15 - 09:45
+  Day 7: task2 09:45 - 13:00
+  Day 7: task3 13:00 - 13:15
+  Day 7: task4 13:15 - 13:45
+  Day 7: task5 13:45 - 14:15
+  Day 8: task1 10:15 - 10:45
+  Day 8: task2 10:45 - 14:00
+  Day 8: task3 14:00 - 14:15
+  Day 8: task4 14:15 - 14:45
+  Day 8: task5 14:45 - 15:15
+  Day 17: task1 11:30 - 12:00
+  Day 17: task2 12:00 - 15:15
+  Day 17: task3 15:15 - 15:30
+  Day 17: task4 15:30 - 16:00
+  Day 17: task5 16:00 - 16:30
+  Day 18: task1 09:30 - 10:00
+  Day 18: task2 10:00 - 13:15
+  Day 18: task3 13:15 - 13:30
+  Day 18: task4 13:30 - 14:00
+  Day 18: task5 14:00 - 14:30
+  Day 20: task1 11:00 - 11:30
+  Day 20: task2 11:30 - 14:45
+  Day 20: task3 14:45 - 15:00
+  Day 20: task4 15:00 - 15:30
+  Day 20: task5 15:30 - 16:00
+  Day 24: task1 09:30 - 10:00
+  Day 24: task2 10:00 - 13:15
+  Day 24: task3 13:15 - 13:30
+  Day 24: task4 13:30 - 14:00
+  Day 24: task5 14:00 - 14:30
+  Day 31: task1 10:30 - 11:00
+  Day 31: task2 11:00 - 14:15
+  Day 31: task3 14:15 - 14:30
+  Day 31: task4 14:30 - 15:00
+  Day 31: task5 15:00 - 15:30
+  Day 34: task1 11:30 - 12:00
+  Day 34: task2 12:00 - 15:15
+  Day 34: task3 15:15 - 15:30
+  Day 34: task4 15:30 - 16:00
+  Day 34: task5 16:00 - 16:30
+Patient  7:
+  Day 8: task1 09:30 - 10:00
+  Day 8: task2 10:00 - 13:00
+  Day 8: task3 13:00 - 13:30
+  Day 8: task4 13:30 - 14:00
+  Day 8: task5 14:00 - 14:15
+  Day 10: task1 11:15 - 11:45
+  Day 10: task2 11:45 - 14:45
+  Day 10: task3 14:45 - 15:15
+  Day 10: task4 15:15 - 15:45
+  Day 10: task5 15:45 - 16:00
+  Day 15: task1 11:00 - 11:30
+  Day 15: task2 11:30 - 14:30
+  Day 15: task3 14:30 - 15:00
+  Day 15: task4 15:00 - 15:30
+  Day 15: task5 15:30 - 15:45
+  Day 16: task1 10:00 - 10:30
+  Day 16: task2 10:30 - 13:30
+  Day 16: task3 13:30 - 14:00
+  Day 16: task4 14:00 - 14:30
+  Day 16: task5 14:30 - 14:45
+  Day 21: task1 11:15 - 11:45
+  Day 21: task2 11:45 - 14:45
+  Day 21: task3 14:45 - 15:15
+  Day 21: task4 15:15 - 15:45
+  Day 21: task5 15:45 - 16:00
+  Day 30: task1 09:45 - 10:15
+  Day 30: task2 10:15 - 13:15
+  Day 30: task3 13:15 - 13:45
+  Day 30: task4 13:45 - 14:15
+  Day 30: task5 14:15 - 14:30
+  Day 32: task1 10:15 - 10:45
+  Day 32: task2 10:45 - 13:45
+  Day 32: task3 13:45 - 14:15
+  Day 32: task4 14:15 - 14:45
+  Day 32: task5 14:45 - 15:00
+  Day 33: task1 10:30 - 11:00
+  Day 33: task2 11:00 - 14:00
+  Day 33: task3 14:00 - 14:30
+  Day 33: task4 14:30 - 15:00
+  Day 33: task5 15:00 - 15:15
+  Day 35: task1 10:00 - 10:30
+  Day 35: task2 10:30 - 13:30
+  Day 35: task3 13:30 - 14:00
+  Day 35: task4 14:00 - 14:30
+  Day 35: task5 14:30 - 14:45
+Patient  8:
+  Day 19: task1 09:45 - 10:15
+  Day 19: task2 10:15 - 13:30
+  Day 19: task3 13:30 - 13:45
+  Day 19: task4 13:45 - 14:15
+  Day 19: task5 14:15 - 14:30
+  Day 24: task1 11:30 - 12:00
+  Day 24: task2 12:00 - 15:15
+  Day 24: task3 15:15 - 15:30
+  Day 24: task4 15:30 - 16:00
+  Day 24: task5 16:00 - 16:15
+  Day 26: task1 09:15 - 09:45
+  Day 26: task2 09:45 - 13:00
+  Day 26: task3 13:00 - 13:15
+  Day 26: task4 13:15 - 13:45
+  Day 26: task5 13:45 - 14:00
+  Day 27: task1 11:00 - 11:30
+  Day 27: task2 11:30 - 14:45
+  Day 27: task3 14:45 - 15:00
+  Day 27: task4 15:00 - 15:30
+  Day 27: task5 15:30 - 15:45
+  Day 28: task1 10:15 - 10:45
+  Day 28: task2 10:45 - 14:00
+  Day 28: task3 14:00 - 14:15
+  Day 28: task4 14:15 - 14:45
+  Day 28: task5 14:45 - 15:00
+  Day 37: task1 09:30 - 10:00
+  Day 37: task2 10:00 - 13:15
+  Day 37: task3 13:15 - 13:30
+  Day 37: task4 13:30 - 14:00
+  Day 37: task5 14:00 - 14:15
+  Day 38: task1 09:45 - 10:15
+  Day 38: task2 10:15 - 13:30
+  Day 38: task3 13:30 - 13:45
+  Day 38: task4 13:45 - 14:15
+  Day 38: task5 14:15 - 14:30
+  Day 39: task1 10:15 - 10:45
+  Day 39: task2 10:45 - 14:00
+  Day 39: task3 14:00 - 14:15
+  Day 39: task4 14:15 - 14:45
+  Day 39: task5 14:45 - 15:00
+Patient  9:
+  Day 2: task1 09:30 - 09:45
+  Day 2: task2 09:45 - 13:00
+  Day 2: task3 13:00 - 13:15
+  Day 2: task4 13:15 - 14:00
+  Day 2: task5 14:00 - 14:15
+  Day 5: task1 11:15 - 11:30
+  Day 5: task2 11:30 - 14:45
+  Day 5: task3 14:45 - 15:00
+  Day 5: task4 15:00 - 15:45
+  Day 5: task5 15:45 - 16:00
+  Day 7: task1 11:30 - 11:45
+  Day 7: task2 11:45 - 15:00
+  Day 7: task3 15:00 - 15:15
+  Day 7: task4 15:15 - 16:00
+  Day 7: task5 16:00 - 16:15
+  Day 8: task1 11:00 - 11:15
+  Day 8: task2 11:15 - 14:30
+  Day 8: task3 14:30 - 14:45
+  Day 8: task4 14:45 - 15:30
+  Day 8: task5 15:30 - 15:45
+  Day 10: task1 10:45 - 11:00
+  Day 10: task2 11:00 - 14:15
+  Day 10: task3 14:15 - 14:30
+  Day 10: task4 14:30 - 15:15
+  Day 10: task5 15:15 - 15:30
+  Day 11: task1 11:15 - 11:30
+  Day 11: task2 11:30 - 14:45
+  Day 11: task3 14:45 - 15:00
+  Day 11: task4 15:00 - 15:45
+  Day 11: task5 15:45 - 16:00
+  Day 14: task1 09:30 - 09:45
+  Day 14: task2 09:45 - 13:00
+  Day 14: task3 13:00 - 13:15
+  Day 14: task4 13:15 - 14:00
+  Day 14: task5 14:00 - 14:15
+  Day 15: task1 11:15 - 11:30
+  Day 15: task2 11:30 - 14:45
+  Day 15: task3 14:45 - 15:00
+  Day 15: task4 15:00 - 15:45
+  Day 15: task5 15:45 - 16:00
+  Day 16: task1 09:45 - 10:00
+  Day 16: task2 10:00 - 13:15
+  Day 16: task3 13:15 - 13:30
+  Day 16: task4 13:30 - 14:15
+  Day 16: task5 14:15 - 14:30
+  Day 18: task1 10:00 - 10:15
+  Day 18: task2 10:15 - 13:30
+  Day 18: task3 13:30 - 13:45
+  Day 18: task4 13:45 - 14:30
+  Day 18: task5 14:30 - 14:45
+  Day 23: task1 11:15 - 11:30
+  Day 23: task2 11:30 - 14:45
+  Day 23: task3 14:45 - 15:00
+  Day 23: task4 15:00 - 15:45
+  Day 23: task5 15:45 - 16:00
+  Day 24: task1 10:15 - 10:30
+  Day 24: task2 10:30 - 13:45
+  Day 24: task3 13:45 - 14:00
+  Day 24: task4 14:00 - 14:45
+  Day 24: task5 14:45 - 15:00
+  Day 26: task1 10:00 - 10:15
+  Day 26: task2 10:15 - 13:30
+  Day 26: task3 13:30 - 13:45
+  Day 26: task4 13:45 - 14:30
+  Day 26: task5 14:30 - 14:45
+Patient 10:
+  Day 0: task1 09:30 - 09:45
+  Day 0: task2 09:45 - 13:30
+  Day 0: task3 13:30 - 13:45
+  Day 0: task4 13:45 - 14:15
+  Day 0: task5 14:15 - 14:30
+  Day 9: task1 10:00 - 10:15
+  Day 9: task2 10:15 - 14:00
+  Day 9: task3 14:00 - 14:15
+  Day 9: task4 14:15 - 14:45
+  Day 9: task5 14:45 - 15:00
+  Day 10: task1 10:15 - 10:30
+  Day 10: task2 10:30 - 14:15
+  Day 10: task3 14:15 - 14:30
+  Day 10: task4 14:30 - 15:00
+  Day 10: task5 15:00 - 15:15
+  Day 12: task1 11:00 - 11:15
+  Day 12: task2 11:15 - 15:00
+  Day 12: task3 15:00 - 15:15
+  Day 12: task4 15:15 - 15:45
+  Day 12: task5 15:45 - 16:00
+  Day 16: task1 11:45 - 12:00
+  Day 16: task2 12:00 - 15:45
+  Day 16: task3 15:45 - 16:00
+  Day 16: task4 16:00 - 16:30
+  Day 16: task5 16:30 - 16:45
+  Day 20: task1 09:00 - 09:15
+  Day 20: task2 09:15 - 13:00
+  Day 20: task3 13:00 - 13:15
+  Day 20: task4 13:15 - 13:45
+  Day 20: task5 13:45 - 14:00
+  Day 21: task1 10:00 - 10:15
+  Day 21: task2 10:15 - 14:00
+  Day 21: task3 14:00 - 14:15
+  Day 21: task4 14:15 - 14:45
+  Day 21: task5 14:45 - 15:00
+  Day 27: task1 09:15 - 09:30
+  Day 27: task2 09:30 - 13:15
+  Day 27: task3 13:15 - 13:30
+  Day 27: task4 13:30 - 14:00
+  Day 27: task5 14:00 - 14:15
+  Day 30: task1 10:30 - 10:45
+  Day 30: task2 10:45 - 14:30
+  Day 30: task3 14:30 - 14:45
+  Day 30: task4 14:45 - 15:15
+  Day 30: task5 15:15 - 15:30
+  Day 31: task1 11:45 - 12:00
+  Day 31: task2 12:00 - 15:45
+  Day 31: task3 15:45 - 16:00
+  Day 31: task4 16:00 - 16:30
+  Day 31: task5 16:30 - 16:45
+  Day 32: task1 09:00 - 09:15
+  Day 32: task2 09:15 - 13:00
+  Day 32: task3 13:00 - 13:15
+  Day 32: task4 13:15 - 13:45
+  Day 32: task5 13:45 - 14:00
+Patient 11:
+  Day 24: task1 11:30 - 11:45
+  Day 24: task2 11:45 - 14:45
+  Day 24: task3 14:45 - 15:00
+  Day 24: task4 15:00 - 15:15
+  Day 24: task5 15:15 - 15:45
+  Day 25: task1 11:45 - 12:00
+  Day 25: task2 12:00 - 15:00
+  Day 25: task3 15:00 - 15:15
+  Day 25: task4 15:15 - 15:30
+  Day 25: task5 15:30 - 16:00
+  Day 26: task1 10:45 - 11:00
+  Day 26: task2 11:00 - 14:00
+  Day 26: task3 14:00 - 14:15
+  Day 26: task4 14:15 - 14:30
+  Day 26: task5 14:30 - 15:00
+  Day 27: task1 09:45 - 10:00
+  Day 27: task2 10:00 - 13:00
+  Day 27: task3 13:00 - 13:15
+  Day 27: task4 13:15 - 13:30
+  Day 27: task5 13:30 - 14:00
+  Day 29: task1 10:00 - 10:15
+  Day 29: task2 10:15 - 13:15
+  Day 29: task3 13:15 - 13:30
+  Day 29: task4 13:30 - 13:45
+  Day 29: task5 13:45 - 14:15
+  Day 30: task1 10:00 - 10:15
+  Day 30: task2 10:15 - 13:15
+  Day 30: task3 13:15 - 13:30
+  Day 30: task4 13:30 - 13:45
+  Day 30: task5 13:45 - 14:15
+  Day 32: task1 10:00 - 10:15
+  Day 32: task2 10:15 - 13:15
+  Day 32: task3 13:15 - 13:30
+  Day 32: task4 13:30 - 13:45
+  Day 32: task5 13:45 - 14:15
+  Day 36: task1 11:45 - 12:00
+  Day 36: task2 12:00 - 15:00
+  Day 36: task3 15:00 - 15:15
+  Day 36: task4 15:15 - 15:30
+  Day 36: task5 15:30 - 16:00
+  Day 39: task1 09:45 - 10:00
+  Day 39: task2 10:00 - 13:00
+  Day 39: task3 13:00 - 13:15
+  Day 39: task4 13:15 - 13:30
+  Day 39: task5 13:30 - 14:00
+Patient 12:
+  Day 1: task1 11:00 - 11:30
+  Day 1: task2 11:30 - 15:15
+  Day 1: task3 15:15 - 15:30
+  Day 1: task4 15:30 - 16:00
+  Day 1: task5 16:00 - 16:15
+  Day 9: task1 09:30 - 10:00
+  Day 9: task2 10:00 - 13:45
+  Day 9: task3 13:45 - 14:00
+  Day 9: task4 14:00 - 14:30
+  Day 9: task5 14:30 - 14:45
+  Day 14: task1 09:00 - 09:30
+  Day 14: task2 09:30 - 13:15
+  Day 14: task3 13:15 - 13:30
+  Day 14: task4 13:30 - 14:00
+  Day 14: task5 14:00 - 14:15
+  Day 17: task1 10:30 - 11:00
+  Day 17: task2 11:00 - 14:45
+  Day 17: task3 14:45 - 15:00
+  Day 17: task4 15:00 - 15:30
+  Day 17: task5 15:30 - 15:45
+  Day 19: task1 09:15 - 09:45
+  Day 19: task2 09:45 - 13:30
+  Day 19: task3 13:30 - 13:45
+  Day 19: task4 13:45 - 14:15
+  Day 19: task5 14:15 - 14:30
+  Day 21: task1 10:15 - 10:45
+  Day 21: task2 10:45 - 14:30
+  Day 21: task3 14:30 - 14:45
+  Day 21: task4 14:45 - 15:15
+  Day 21: task5 15:15 - 15:30
+  Day 29: task1 10:15 - 10:45
+  Day 29: task2 10:45 - 14:30
+  Day 29: task3 14:30 - 14:45
+  Day 29: task4 14:45 - 15:15
+  Day 29: task5 15:15 - 15:30
+  Day 31: task1 11:15 - 11:45
+  Day 31: task2 11:45 - 15:30
+  Day 31: task3 15:30 - 15:45
+  Day 31: task4 15:45 - 16:15
+  Day 31: task5 16:15 - 16:30
+  Day 34: task1 10:00 - 10:30
+  Day 34: task2 10:30 - 14:15
+  Day 34: task3 14:15 - 14:30
+  Day 34: task4 14:30 - 15:00
+  Day 34: task5 15:00 - 15:15
+  Day 35: task1 11:00 - 11:30
+  Day 35: task2 11:30 - 15:15
+  Day 35: task3 15:15 - 15:30
+  Day 35: task4 15:30 - 16:00
+  Day 35: task5 16:00 - 16:15
+Patient 13:
+  Day 24: task1 09:45 - 10:00
+  Day 24: task2 10:00 - 13:15
+  Day 24: task3 13:15 - 13:30
+  Day 24: task4 13:30 - 14:00
+  Day 24: task5 14:00 - 14:15
+  Day 25: task1 10:45 - 11:00
+  Day 25: task2 11:00 - 14:15
+  Day 25: task3 14:15 - 14:30
+  Day 25: task4 14:30 - 15:00
+  Day 25: task5 15:00 - 15:15
+  Day 29: task1 09:45 - 10:00
+  Day 29: task2 10:00 - 13:15
+  Day 29: task3 13:15 - 13:30
+  Day 29: task4 13:30 - 14:00
+  Day 29: task5 14:00 - 14:15
+  Day 31: task1 09:45 - 10:00
+  Day 31: task2 10:00 - 13:15
+  Day 31: task3 13:15 - 13:30
+  Day 31: task4 13:30 - 14:00
+  Day 31: task5 14:00 - 14:15
+  Day 32: task1 11:15 - 11:30
+  Day 32: task2 11:30 - 14:45
+  Day 32: task3 14:45 - 15:00
+  Day 32: task4 15:00 - 15:30
+  Day 32: task5 15:30 - 15:45
+  Day 33: task1 11:45 - 12:00
+  Day 33: task2 12:00 - 15:15
+  Day 33: task3 15:15 - 15:30
+  Day 33: task4 15:30 - 16:00
+  Day 33: task5 16:00 - 16:15
+  Day 38: task1 10:00 - 10:15
+  Day 38: task2 10:15 - 13:30
+  Day 38: task3 13:30 - 13:45
+  Day 38: task4 13:45 - 14:15
+  Day 38: task5 14:15 - 14:30
+  Day 39: task1 11:45 - 12:00
+  Day 39: task2 12:00 - 15:15
+  Day 39: task3 15:15 - 15:30
+  Day 39: task4 15:30 - 16:00
+  Day 39: task5 16:00 - 16:15
+Patient 14:
+  Day 25: task1 09:45 - 10:15
+  Day 25: task2 10:15 - 13:30
+  Day 25: task3 13:30 - 13:45
+  Day 25: task4 13:45 - 14:15
+  Day 25: task5 14:15 - 14:30
+  Day 28: task1 09:45 - 10:15
+  Day 28: task2 10:15 - 13:30
+  Day 28: task3 13:30 - 13:45
+  Day 28: task4 13:45 - 14:15
+  Day 28: task5 14:15 - 14:30
+  Day 33: task1 09:45 - 10:15
+  Day 33: task2 10:15 - 13:30
+  Day 33: task3 13:30 - 13:45
+  Day 33: task4 13:45 - 14:15
+  Day 33: task5 14:15 - 14:30
+  Day 35: task1 09:45 - 10:15
+  Day 35: task2 10:15 - 13:30
+  Day 35: task3 13:30 - 13:45
+  Day 35: task4 13:45 - 14:15
+  Day 35: task5 14:15 - 14:30
+  Day 36: task1 10:45 - 11:15
+  Day 36: task2 11:15 - 14:30
+  Day 36: task3 14:30 - 14:45
+  Day 36: task4 14:45 - 15:15
+  Day 36: task5 15:15 - 15:30
+  Day 39: task1 09:45 - 10:15
+  Day 39: task2 10:15 - 13:30
+  Day 39: task3 13:30 - 13:45
+  Day 39: task4 13:45 - 14:15
+  Day 39: task5 14:15 - 14:30
+Patient 15:
+  Day 2: task1 10:00 - 10:15
+  Day 2: task2 10:15 - 13:30
+  Day 2: task3 13:30 - 13:45
+  Day 2: task4 13:45 - 14:00
+  Day 2: task5 14:00 - 14:15
+  Day 3: task1 09:30 - 09:45
+  Day 3: task2 09:45 - 13:00
+  Day 3: task3 13:00 - 13:15
+  Day 3: task4 13:15 - 13:30
+  Day 3: task5 13:30 - 13:45
+  Day 4: task1 11:30 - 11:45
+  Day 4: task2 11:45 - 15:00
+  Day 4: task3 15:00 - 15:15
+  Day 4: task4 15:15 - 15:30
+  Day 4: task5 15:30 - 15:45
+  Day 7: task1 10:45 - 11:00
+  Day 7: task2 11:00 - 14:15
+  Day 7: task3 14:15 - 14:30
+  Day 7: task4 14:30 - 14:45
+  Day 7: task5 14:45 - 15:00
+  Day 12: task1 10:15 - 10:30
+  Day 12: task2 10:30 - 13:45
+  Day 12: task3 13:45 - 14:00
+  Day 12: task4 14:00 - 14:15
+  Day 12: task5 14:15 - 14:30
+  Day 14: task1 09:30 - 09:45
+  Day 14: task2 09:45 - 13:00
+  Day 14: task3 13:00 - 13:15
+  Day 14: task4 13:15 - 13:30
+  Day 14: task5 13:30 - 13:45
+  Day 18: task1 11:30 - 11:45
+  Day 18: task2 11:45 - 15:00
+  Day 18: task3 15:00 - 15:15
+  Day 18: task4 15:15 - 15:30
+  Day 18: task5 15:30 - 15:45
+  Day 21: task1 11:00 - 11:15
+  Day 21: task2 11:15 - 14:30
+  Day 21: task3 14:30 - 14:45
+  Day 21: task4 14:45 - 15:00
+  Day 21: task5 15:00 - 15:15
+Patient 16:
+  Day 6: task1 10:00 - 10:15
+  Day 6: task2 10:15 - 13:30
+  Day 6: task3 13:30 - 13:45
+  Day 6: task4 13:45 - 14:30
+  Day 6: task5 14:30 - 15:00
+  Day 17: task1 10:15 - 10:30
+  Day 17: task2 10:30 - 13:45
+  Day 17: task3 13:45 - 14:00
+  Day 17: task4 14:00 - 14:45
+  Day 17: task5 14:45 - 15:15
+  Day 19: task1 11:45 - 12:00
+  Day 19: task2 12:00 - 15:15
+  Day 19: task3 15:15 - 15:30
+  Day 19: task4 15:30 - 16:15
+  Day 19: task5 16:15 - 16:45
+  Day 22: task1 10:45 - 11:00
+  Day 22: task2 11:00 - 14:15
+  Day 22: task3 14:15 - 14:30
+  Day 22: task4 14:30 - 15:15
+  Day 22: task5 15:15 - 15:45
+  Day 25: task1 11:15 - 11:30
+  Day 25: task2 11:30 - 14:45
+  Day 25: task3 14:45 - 15:00
+  Day 25: task4 15:00 - 15:45
+  Day 25: task5 15:45 - 16:15
+  Day 26: task1 11:30 - 11:45
+  Day 26: task2 11:45 - 15:00
+  Day 26: task3 15:00 - 15:15
+  Day 26: task4 15:15 - 16:00
+  Day 26: task5 16:00 - 16:30
+  Day 27: task1 11:45 - 12:00
+  Day 27: task2 12:00 - 15:15
+  Day 27: task3 15:15 - 15:30
+  Day 27: task4 15:30 - 16:15
+  Day 27: task5 16:15 - 16:45
+  Day 29: task1 11:30 - 11:45
+  Day 29: task2 11:45 - 15:00
+  Day 29: task3 15:00 - 15:15
+  Day 29: task4 15:15 - 16:00
+  Day 29: task5 16:00 - 16:30
+  Day 30: task1 10:30 - 10:45
+  Day 30: task2 10:45 - 14:00
+  Day 30: task3 14:00 - 14:15
+  Day 30: task4 14:15 - 15:00
+  Day 30: task5 15:00 - 15:30
+  Day 32: task1 11:15 - 11:30
+  Day 32: task2 11:30 - 14:45
+  Day 32: task3 14:45 - 15:00
+  Day 32: task4 15:00 - 15:45
+  Day 32: task5 15:45 - 16:15
+  Day 36: task1 09:45 - 10:00
+  Day 36: task2 10:00 - 13:15
+  Day 36: task3 13:15 - 13:30
+  Day 36: task4 13:30 - 14:15
+  Day 36: task5 14:15 - 14:45
+  Day 37: task1 11:45 - 12:00
+  Day 37: task2 12:00 - 15:15
+  Day 37: task3 15:15 - 15:30
+  Day 37: task4 15:30 - 16:15
+  Day 37: task5 16:15 - 16:45
+  Day 39: task1 11:45 - 12:00
+  Day 39: task2 12:00 - 15:15
+  Day 39: task3 15:15 - 15:30
+  Day 39: task4 15:30 - 16:15
+  Day 39: task5 16:15 - 16:45
+Patient 17:
+  Day 0: task1 11:30 - 12:00
+  Day 0: task2 12:00 - 16:00
+  Day 0: task3 16:00 - 16:15
+  Day 0: task4 16:15 - 16:45
+  Day 0: task5 16:45 - 17:00
+  Day 1: task1 09:15 - 09:45
+  Day 1: task2 09:45 - 13:45
+  Day 1: task3 13:45 - 14:00
+  Day 1: task4 14:00 - 14:30
+  Day 1: task5 14:30 - 14:45
+  Day 11: task1 11:30 - 12:00
+  Day 11: task2 12:00 - 16:00
+  Day 11: task3 16:00 - 16:15
+  Day 11: task4 16:15 - 16:45
+  Day 11: task5 16:45 - 17:00
+  Day 12: task1 11:30 - 12:00
+  Day 12: task2 12:00 - 16:00
+  Day 12: task3 16:00 - 16:15
+  Day 12: task4 16:15 - 16:45
+  Day 12: task5 16:45 - 17:00
+  Day 14: task1 10:15 - 10:45
+  Day 14: task2 10:45 - 14:45
+  Day 14: task3 14:45 - 15:00
+  Day 14: task4 15:00 - 15:30
+  Day 14: task5 15:30 - 15:45
+  Day 20: task1 10:00 - 10:30
+  Day 20: task2 10:30 - 14:30
+  Day 20: task3 14:30 - 14:45
+  Day 20: task4 14:45 - 15:15
+  Day 20: task5 15:15 - 15:30
+  Day 27: task1 11:30 - 12:00
+  Day 27: task2 12:00 - 16:00
+  Day 27: task3 16:00 - 16:15
+  Day 27: task4 16:15 - 16:45
+  Day 27: task5 16:45 - 17:00
+Patient 18:
+  Day 17: task1 09:30 - 09:45
+  Day 17: task2 09:45 - 13:00
+  Day 17: task3 13:00 - 13:15
+  Day 17: task4 13:15 - 13:30
+  Day 17: task5 13:30 - 14:00
+  Day 18: task1 11:45 - 12:00
+  Day 18: task2 12:00 - 15:15
+  Day 18: task3 15:15 - 15:30
+  Day 18: task4 15:30 - 15:45
+  Day 18: task5 15:45 - 16:15
+  Day 19: task1 11:30 - 11:45
+  Day 19: task2 11:45 - 15:00
+  Day 19: task3 15:00 - 15:15
+  Day 19: task4 15:15 - 15:30
+  Day 19: task5 15:30 - 16:00
+  Day 31: task1 09:30 - 09:45
+  Day 31: task2 09:45 - 13:00
+  Day 31: task3 13:00 - 13:15
+  Day 31: task4 13:15 - 13:30
+  Day 31: task5 13:30 - 14:00
+  Day 35: task1 11:45 - 12:00
+  Day 35: task2 12:00 - 15:15
+  Day 35: task3 15:15 - 15:30
+  Day 35: task4 15:30 - 15:45
+  Day 35: task5 15:45 - 16:15
+  Day 37: task1 11:30 - 11:45
+  Day 37: task2 11:45 - 15:00
+  Day 37: task3 15:00 - 15:15
+  Day 37: task4 15:15 - 15:30
+  Day 37: task5 15:30 - 16:00
+Patient 19:
+  Day 34: task1 10:15 - 10:45
+  Day 34: task2 10:45 - 13:30
+  Day 34: task3 13:30 - 13:45
+  Day 34: task4 13:45 - 14:00
+  Day 34: task5 14:00 - 14:30
+  Day 38: task1 11:15 - 11:45
+  Day 38: task2 11:45 - 14:30
+  Day 38: task3 14:30 - 14:45
+  Day 38: task4 14:45 - 15:00
+  Day 38: task5 15:00 - 15:30
+Patient 20:
+  Day 16: task1 11:00 - 11:30
+  Day 16: task2 11:30 - 14:15
+  Day 16: task3 14:15 - 14:30
+  Day 16: task4 14:30 - 15:00
+  Day 16: task5 15:00 - 15:15
+  Day 22: task1 11:15 - 11:45
+  Day 22: task2 11:45 - 14:30
+  Day 22: task3 14:30 - 14:45
+  Day 22: task4 14:45 - 15:15
+  Day 22: task5 15:15 - 15:30
+  Day 29: task1 10:15 - 10:45
+  Day 29: task2 10:45 - 13:30
+  Day 29: task3 13:30 - 13:45
+  Day 29: task4 13:45 - 14:15
+  Day 29: task5 14:15 - 14:30
+  Day 30: task1 11:30 - 12:00
+  Day 30: task2 12:00 - 14:45
+  Day 30: task3 14:45 - 15:00
+  Day 30: task4 15:00 - 15:30
+  Day 30: task5 15:30 - 15:45
+  Day 32: task1 11:15 - 11:45
+  Day 32: task2 11:45 - 14:30
+  Day 32: task3 14:30 - 14:45
+  Day 32: task4 14:45 - 15:15
+  Day 32: task5 15:15 - 15:30
+  Day 33: task1 11:15 - 11:45
+  Day 33: task2 11:45 - 14:30
+  Day 33: task3 14:30 - 14:45
+  Day 33: task4 14:45 - 15:15
+  Day 33: task5 15:15 - 15:30
+  Day 39: task1 11:30 - 12:00
+  Day 39: task2 12:00 - 14:45
+  Day 39: task3 14:45 - 15:00
+  Day 39: task4 15:00 - 15:30
+  Day 39: task5 15:30 - 15:45
+Patient 21:
+  Day 2: task1 11:00 - 11:15
+  Day 2: task2 11:15 - 13:45
+  Day 2: task3 13:45 - 14:00
+  Day 2: task4 14:00 - 14:15
+  Day 2: task5 14:15 - 14:30
+  Day 4: task1 10:30 - 10:45
+  Day 4: task2 10:45 - 13:15
+  Day 4: task3 13:15 - 13:30
+  Day 4: task4 13:30 - 13:45
+  Day 4: task5 13:45 - 14:00
+  Day 6: task1 10:15 - 10:30
+  Day 6: task2 10:30 - 13:00
+  Day 6: task3 13:00 - 13:15
+  Day 6: task4 13:15 - 13:30
+  Day 6: task5 13:30 - 13:45
+  Day 10: task1 13:15 - 13:30
+  Day 10: task2 13:30 - 16:00
+  Day 10: task3 16:00 - 16:15
+  Day 10: task4 16:15 - 16:30
+  Day 10: task5 16:30 - 16:45
+  Day 14: task1 10:30 - 10:45
+  Day 14: task2 10:45 - 13:15
+  Day 14: task3 13:15 - 13:30
+  Day 14: task4 13:30 - 13:45
+  Day 14: task5 13:45 - 14:00
+  Day 21: task1 13:30 - 13:45
+  Day 21: task2 13:45 - 16:15
+  Day 21: task3 16:15 - 16:30
+  Day 21: task4 16:30 - 16:45
+  Day 21: task5 16:45 - 17:00
+  Day 23: task1 11:45 - 12:00
+  Day 23: task2 12:00 - 14:30
+  Day 23: task3 14:30 - 14:45
+  Day 23: task4 14:45 - 15:00
+  Day 23: task5 15:00 - 15:15
+Patient 22:
+  Day 1: task1 09:45 - 10:00
+  Day 1: task2 10:00 - 13:00
+  Day 1: task3 13:00 - 13:15
+  Day 1: task4 13:15 - 13:30
+  Day 1: task5 13:30 - 14:00
+  Day 3: task1 10:15 - 10:30
+  Day 3: task2 10:30 - 13:30
+  Day 3: task3 13:30 - 13:45
+  Day 3: task4 13:45 - 14:00
+  Day 3: task5 14:00 - 14:30
+  Day 4: task1 09:45 - 10:00
+  Day 4: task2 10:00 - 13:00
+  Day 4: task3 13:00 - 13:15
+  Day 4: task4 13:15 - 13:30
+  Day 4: task5 13:30 - 14:00
+  Day 8: task1 11:00 - 11:15
+  Day 8: task2 11:15 - 14:15
+  Day 8: task3 14:15 - 14:30
+  Day 8: task4 14:30 - 14:45
+  Day 8: task5 14:45 - 15:15
+  Day 12: task1 11:30 - 11:45
+  Day 12: task2 11:45 - 14:45
+  Day 12: task3 14:45 - 15:00
+  Day 12: task4 15:00 - 15:15
+  Day 12: task5 15:15 - 15:45
+  Day 15: task1 10:00 - 10:15
+  Day 15: task2 10:15 - 13:15
+  Day 15: task3 13:15 - 13:30
+  Day 15: task4 13:30 - 13:45
+  Day 15: task5 13:45 - 14:15
+  Day 16: task1 11:30 - 11:45
+  Day 16: task2 11:45 - 14:45
+  Day 16: task3 14:45 - 15:00
+  Day 16: task4 15:00 - 15:15
+  Day 16: task5 15:15 - 15:45
+  Day 17: task1 11:15 - 11:30
+  Day 17: task2 11:30 - 14:30
+  Day 17: task3 14:30 - 14:45
+  Day 17: task4 14:45 - 15:00
+  Day 17: task5 15:00 - 15:30
+  Day 20: task1 11:45 - 12:00
+  Day 20: task2 12:00 - 15:00
+  Day 20: task3 15:00 - 15:15
+  Day 20: task4 15:15 - 15:30
+  Day 20: task5 15:30 - 16:00
+  Day 21: task1 10:00 - 10:15
+  Day 21: task2 10:15 - 13:15
+  Day 21: task3 13:15 - 13:30
+  Day 21: task4 13:30 - 13:45
+  Day 21: task5 13:45 - 14:15
+  Day 30: task1 10:15 - 10:30
+  Day 30: task2 10:30 - 13:30
+  Day 30: task3 13:30 - 13:45
+  Day 30: task4 13:45 - 14:00
+  Day 30: task5 14:00 - 14:30
+  Day 36: task1 10:15 - 10:30
+  Day 36: task2 10:30 - 13:30
+  Day 36: task3 13:30 - 13:45
+  Day 36: task4 13:45 - 14:00
+  Day 36: task5 14:00 - 14:30
+Patient 23:
+  Day 1: task1 11:15 - 11:30
+  Day 1: task2 11:30 - 14:45
+  Day 1: task3 14:45 - 15:00
+  Day 1: task4 15:00 - 15:30
+  Day 1: task5 15:30 - 15:45
+  Day 2: task1 10:15 - 10:30
+  Day 2: task2 10:30 - 13:45
+  Day 2: task3 13:45 - 14:00
+  Day 2: task4 14:00 - 14:30
+  Day 2: task5 14:30 - 14:45
+  Day 4: task1 11:15 - 11:30
+  Day 4: task2 11:30 - 14:45
+  Day 4: task3 14:45 - 15:00
+  Day 4: task4 15:00 - 15:30
+  Day 4: task5 15:30 - 15:45
+  Day 8: task1 10:00 - 10:15
+  Day 8: task2 10:15 - 13:30
+  Day 8: task3 13:30 - 13:45
+  Day 8: task4 13:45 - 14:15
+  Day 8: task5 14:15 - 14:30
+  Day 9: task1 09:30 - 09:45
+  Day 9: task2 09:45 - 13:00
+  Day 9: task3 13:00 - 13:15
+  Day 9: task4 13:15 - 13:45
+  Day 9: task5 13:45 - 14:00
+  Day 13: task1 10:15 - 10:30
+  Day 13: task2 10:30 - 13:45
+  Day 13: task3 13:45 - 14:00
+  Day 13: task4 14:00 - 14:30
+  Day 13: task5 14:30 - 14:45
+  Day 19: task1 11:45 - 12:00
+  Day 19: task2 12:00 - 15:15
+  Day 19: task3 15:15 - 15:30
+  Day 19: task4 15:30 - 16:00
+  Day 19: task5 16:00 - 16:15
+  Day 29: task1 09:30 - 09:45
+  Day 29: task2 09:45 - 13:00
+  Day 29: task3 13:00 - 13:15
+  Day 29: task4 13:15 - 13:45
+  Day 29: task5 13:45 - 14:00
+  Day 35: task1 11:30 - 11:45
+  Day 35: task2 11:45 - 15:00
+  Day 35: task3 15:00 - 15:15
+  Day 35: task4 15:15 - 15:45
+  Day 35: task5 15:45 - 16:00
+Patient 24:
+  Day 1: task1 11:30 - 11:45
+  Day 1: task2 11:45 - 14:30
+  Day 1: task3 14:30 - 14:45
+  Day 1: task4 14:45 - 15:15
+  Day 1: task5 15:15 - 15:30
+  Day 2: task1 10:30 - 10:45
+  Day 2: task2 10:45 - 13:30
+  Day 2: task3 13:30 - 13:45
+  Day 2: task4 13:45 - 14:15
+  Day 2: task5 14:15 - 14:30
+  Day 4: task1 11:00 - 11:15
+  Day 4: task2 11:15 - 14:00
+  Day 4: task3 14:00 - 14:15
+  Day 4: task4 14:15 - 14:45
+  Day 4: task5 14:45 - 15:00
+  Day 6: task1 11:45 - 12:00
+  Day 6: task2 12:00 - 14:45
+  Day 6: task3 14:45 - 15:00
+  Day 6: task4 15:00 - 15:30
+  Day 6: task5 15:30 - 15:45
+  Day 10: task1 11:45 - 12:00
+  Day 10: task2 12:00 - 14:45
+  Day 10: task3 14:45 - 15:00
+  Day 10: task4 15:00 - 15:30
+  Day 10: task5 15:30 - 15:45
+  Day 11: task1 11:00 - 11:15
+  Day 11: task2 11:15 - 14:00
+  Day 11: task3 14:00 - 14:15
+  Day 11: task4 14:15 - 14:45
+  Day 11: task5 14:45 - 15:00
+  Day 13: task1 10:30 - 10:45
+  Day 13: task2 10:45 - 13:30
+  Day 13: task3 13:30 - 13:45
+  Day 13: task4 13:45 - 14:15
+  Day 13: task5 14:15 - 14:30
+  Day 14: task1 11:30 - 11:45
+  Day 14: task2 11:45 - 14:30
+  Day 14: task3 14:30 - 14:45
+  Day 14: task4 14:45 - 15:15
+  Day 14: task5 15:15 - 15:30
+  Day 15: task1 11:45 - 12:00
+  Day 15: task2 12:00 - 14:45
+  Day 15: task3 14:45 - 15:00
+  Day 15: task4 15:00 - 15:30
+  Day 15: task5 15:30 - 15:45
+  Day 16: task1 10:00 - 10:15
+  Day 16: task2 10:15 - 13:00
+  Day 16: task3 13:00 - 13:15
+  Day 16: task4 13:15 - 13:45
+  Day 16: task5 13:45 - 14:00
+  Day 17: task1 11:45 - 12:00
+  Day 17: task2 12:00 - 14:45
+  Day 17: task3 14:45 - 15:00
+  Day 17: task4 15:00 - 15:30
+  Day 17: task5 15:30 - 15:45
+  Day 27: task1 10:30 - 10:45
+  Day 27: task2 10:45 - 13:30
+  Day 27: task3 13:30 - 13:45
+  Day 27: task4 13:45 - 14:15
+  Day 27: task5 14:15 - 14:30
+Patient 25:
+  Day 13: task1 11:00 - 11:15
+  Day 13: task2 11:15 - 15:00
+  Day 13: task3 15:00 - 15:15
+  Day 13: task4 15:15 - 15:45
+  Day 13: task5 15:45 - 16:15
+  Day 20: task1 11:45 - 12:00
+  Day 20: task2 12:00 - 15:45
+  Day 20: task3 15:45 - 16:00
+  Day 20: task4 16:00 - 16:30
+  Day 20: task5 16:30 - 17:00
+  Day 23: task1 11:15 - 11:30
+  Day 23: task2 11:30 - 15:15
+  Day 23: task3 15:15 - 15:30
+  Day 23: task4 15:30 - 16:00
+  Day 23: task5 16:00 - 16:30
+  Day 31: task1 11:45 - 12:00
+  Day 31: task2 12:00 - 15:45
+  Day 31: task3 15:45 - 16:00
+  Day 31: task4 16:00 - 16:30
+  Day 31: task5 16:30 - 17:00
+  Day 33: task1 11:45 - 12:00
+  Day 33: task2 12:00 - 15:45
+  Day 33: task3 15:45 - 16:00
+  Day 33: task4 16:00 - 16:30
+  Day 33: task5 16:30 - 17:00
+  Day 37: task1 11:45 - 12:00
+  Day 37: task2 12:00 - 15:45
+  Day 37: task3 15:45 - 16:00
+  Day 37: task4 16:00 - 16:30
+  Day 37: task5 16:30 - 17:00
+  Day 38: task1 10:30 - 10:45
+  Day 38: task2 10:45 - 14:30
+  Day 38: task3 14:30 - 14:45
+  Day 38: task4 14:45 - 15:15
+  Day 38: task5 15:15 - 15:45
+Patient 26:
+  Day 2: task1 11:30 - 11:45
+  Day 2: task2 11:45 - 15:15
+  Day 2: task3 15:15 - 15:30
+  Day 2: task4 15:30 - 15:45
+  Day 2: task5 15:45 - 16:00
+  Day 5: task1 11:45 - 12:00
+  Day 5: task2 12:00 - 15:30
+  Day 5: task3 15:30 - 15:45
+  Day 5: task4 15:45 - 16:00
+  Day 5: task5 16:00 - 16:15
+  Day 9: task1 09:15 - 09:30
+  Day 9: task2 09:30 - 13:00
+  Day 9: task3 13:00 - 13:15
+  Day 9: task4 13:15 - 13:30
+  Day 9: task5 13:30 - 13:45
+  Day 11: task1 09:30 - 09:45
+  Day 11: task2 09:45 - 13:15
+  Day 11: task3 13:15 - 13:30
+  Day 11: task4 13:30 - 13:45
+  Day 11: task5 13:45 - 14:00
+  Day 13: task1 10:15 - 10:30
+  Day 13: task2 10:30 - 14:00
+  Day 13: task3 14:00 - 14:15
+  Day 13: task4 14:15 - 14:30
+  Day 13: task5 14:30 - 14:45
+  Day 14: task1 11:45 - 12:00
+  Day 14: task2 12:00 - 15:30
+  Day 14: task3 15:30 - 15:45
+  Day 14: task4 15:45 - 16:00
+  Day 14: task5 16:00 - 16:15
+  Day 18: task1 09:15 - 09:30
+  Day 18: task2 09:30 - 13:00
+  Day 18: task3 13:00 - 13:15
+  Day 18: task4 13:15 - 13:30
+  Day 18: task5 13:30 - 13:45
+  Day 24: task1 11:15 - 11:30
+  Day 24: task2 11:30 - 15:00
+  Day 24: task3 15:00 - 15:15
+  Day 24: task4 15:15 - 15:30
+  Day 24: task5 15:30 - 15:45
+Patient 27:
+  Day 18: task1 10:00 - 10:15
+  Day 18: task2 10:15 - 13:30
+  Day 18: task3 13:30 - 13:45
+  Day 18: task4 13:45 - 14:15
+  Day 18: task5 14:15 - 14:30
+  Day 28: task1 11:15 - 11:30
+  Day 28: task2 11:30 - 14:45
+  Day 28: task3 14:45 - 15:00
+  Day 28: task4 15:00 - 15:30
+  Day 28: task5 15:30 - 15:45
+  Day 29: task1 11:45 - 12:00
+  Day 29: task2 12:00 - 15:15
+  Day 29: task3 15:15 - 15:30
+  Day 29: task4 15:30 - 16:00
+  Day 29: task5 16:00 - 16:15
+  Day 32: task1 10:45 - 11:00
+  Day 32: task2 11:00 - 14:15
+  Day 32: task3 14:15 - 14:30
+  Day 32: task4 14:30 - 15:00
+  Day 32: task5 15:00 - 15:15
+  Day 35: task1 09:45 - 10:00
+  Day 35: task2 10:00 - 13:15
+  Day 35: task3 13:15 - 13:30
+  Day 35: task4 13:30 - 14:00
+  Day 35: task5 14:00 - 14:15
+  Day 39: task1 11:30 - 11:45
+  Day 39: task2 11:45 - 15:00
+  Day 39: task3 15:00 - 15:15
+  Day 39: task4 15:15 - 15:45
+  Day 39: task5 15:45 - 16:00
+Patient 28:
+  Day 2: task1 11:30 - 11:45
+  Day 2: task2 11:45 - 14:45
+  Day 2: task3 14:45 - 15:15
+  Day 2: task4 15:15 - 15:30
+  Day 2: task5 15:30 - 16:00
+  Day 3: task1 11:15 - 11:30
+  Day 3: task2 11:30 - 14:30
+  Day 3: task3 14:30 - 15:00
+  Day 3: task4 15:00 - 15:15
+  Day 3: task5 15:15 - 15:45
+  Day 6: task1 09:45 - 10:00
+  Day 6: task2 10:00 - 13:00
+  Day 6: task3 13:00 - 13:30
+  Day 6: task4 13:30 - 13:45
+  Day 6: task5 13:45 - 14:15
+  Day 7: task1 10:00 - 10:15
+  Day 7: task2 10:15 - 13:15
+  Day 7: task3 13:15 - 13:45
+  Day 7: task4 13:45 - 14:00
+  Day 7: task5 14:00 - 14:30
+  Day 17: task1 09:45 - 10:00
+  Day 17: task2 10:00 - 13:00
+  Day 17: task3 13:00 - 13:30
+  Day 17: task4 13:30 - 13:45
+  Day 17: task5 13:45 - 14:15
+Patient 29:
+  Day 2: task1 09:30 - 10:00
+  Day 2: task2 10:00 - 13:00
+  Day 2: task3 13:00 - 13:15
+  Day 2: task4 13:15 - 13:30
+  Day 2: task5 13:30 - 13:45
+  Day 3: task1 09:30 - 10:00
+  Day 3: task2 10:00 - 13:00
+  Day 3: task3 13:00 - 13:15
+  Day 3: task4 13:15 - 13:30
+  Day 3: task5 13:30 - 13:45
+  Day 7: task1 09:30 - 10:00
+  Day 7: task2 10:00 - 13:00
+  Day 7: task3 13:00 - 13:15
+  Day 7: task4 13:15 - 13:30
+  Day 7: task5 13:30 - 13:45
+  Day 10: task1 11:00 - 11:30
+  Day 10: task2 11:30 - 14:30
+  Day 10: task3 14:30 - 14:45
+  Day 10: task4 14:45 - 15:00
+  Day 10: task5 15:00 - 15:15
+  Day 11: task1 11:00 - 11:30
+  Day 11: task2 11:30 - 14:30
+  Day 11: task3 14:30 - 14:45
+  Day 11: task4 14:45 - 15:00
+  Day 11: task5 15:00 - 15:15
+  Day 13: task1 11:15 - 11:45
+  Day 13: task2 11:45 - 14:45
+  Day 13: task3 14:45 - 15:00
+  Day 13: task4 15:00 - 15:15
+  Day 13: task5 15:15 - 15:30
+  Day 14: task1 10:45 - 11:15
+  Day 14: task2 11:15 - 14:15
+  Day 14: task3 14:15 - 14:30
+  Day 14: task4 14:30 - 14:45
+  Day 14: task5 14:45 - 15:00
+  Day 15: task1 10:30 - 11:00
+  Day 15: task2 11:00 - 14:00
+  Day 15: task3 14:00 - 14:15
+  Day 15: task4 14:15 - 14:30
+  Day 15: task5 14:30 - 14:45
+  Day 18: task1 11:15 - 11:45
+  Day 18: task2 11:45 - 14:45
+  Day 18: task3 14:45 - 15:00
+  Day 18: task4 15:00 - 15:15
+  Day 18: task5 15:15 - 15:30
+  Day 19: task1 11:00 - 11:30
+  Day 19: task2 11:30 - 14:30
+  Day 19: task3 14:30 - 14:45
+  Day 19: task4 14:45 - 15:00
+  Day 19: task5 15:00 - 15:15
+  Day 22: task1 09:45 - 10:15
+  Day 22: task2 10:15 - 13:15
+  Day 22: task3 13:15 - 13:30
+  Day 22: task4 13:30 - 13:45
+  Day 22: task5 13:45 - 14:00
+  Day 24: task1 11:00 - 11:30
+  Day 24: task2 11:30 - 14:30
+  Day 24: task3 14:30 - 14:45
+  Day 24: task4 14:45 - 15:00
+  Day 24: task5 15:00 - 15:15
+Patient 30:
+  Day 0: task1 13:00 - 13:15
+  Day 0: task2 13:15 - 15:45
+  Day 0: task3 15:45 - 16:00
+  Day 0: task4 16:00 - 16:15
+  Day 0: task5 16:15 - 16:30
+  Day 1: task1 13:15 - 13:30
+  Day 1: task2 13:30 - 16:00
+  Day 1: task3 16:00 - 16:15
+  Day 1: task4 16:15 - 16:30
+  Day 1: task5 16:30 - 16:45
+  Day 5: task1 11:00 - 11:15
+  Day 5: task2 11:15 - 13:45
+  Day 5: task3 13:45 - 14:00
+  Day 5: task4 14:00 - 14:15
+  Day 5: task5 14:15 - 14:30
+  Day 7: task1 11:15 - 11:30
+  Day 7: task2 11:30 - 14:00
+  Day 7: task3 14:00 - 14:15
+  Day 7: task4 14:15 - 14:30
+  Day 7: task5 14:30 - 14:45
+  Day 20: task1 13:30 - 13:45
+  Day 20: task2 13:45 - 16:15
+  Day 20: task3 16:15 - 16:30
+  Day 20: task4 16:30 - 16:45
+  Day 20: task5 16:45 - 17:00
+  Day 21: task1 13:30 - 13:45
+  Day 21: task2 13:45 - 16:15
+  Day 21: task3 16:15 - 16:30
+  Day 21: task4 16:30 - 16:45
+  Day 21: task5 16:45 - 17:00
+  Day 30: task1 10:15 - 10:30
+  Day 30: task2 10:30 - 13:00
+  Day 30: task3 13:00 - 13:15
+  Day 30: task4 13:15 - 13:30
+  Day 30: task5 13:30 - 13:45
+  Day 33: task1 10:15 - 10:30
+  Day 33: task2 10:30 - 13:00
+  Day 33: task3 13:00 - 13:15
+  Day 33: task4 13:15 - 13:30
+  Day 33: task5 13:30 - 13:45
+  Day 34: task1 11:15 - 11:30
+  Day 34: task2 11:30 - 14:00
+  Day 34: task3 14:00 - 14:15
+  Day 34: task4 14:15 - 14:30
+  Day 34: task5 14:30 - 14:45
+Patient 31:
+  Day 1: task1 11:45 - 12:00
+  Day 1: task2 12:00 - 15:45
+  Day 1: task3 15:45 - 16:00
+  Day 1: task4 16:00 - 16:30
+  Day 1: task5 16:30 - 17:00
+  Day 9: task1 11:45 - 12:00
+  Day 9: task2 12:00 - 15:45
+  Day 9: task3 15:45 - 16:00
+  Day 9: task4 16:00 - 16:30
+  Day 9: task5 16:30 - 17:00
+  Day 10: task1 11:30 - 11:45
+  Day 10: task2 11:45 - 15:30
+  Day 10: task3 15:30 - 15:45
+  Day 10: task4 15:45 - 16:15
+  Day 10: task5 16:15 - 16:45
+  Day 30: task1 11:45 - 12:00
+  Day 30: task2 12:00 - 15:45
+  Day 30: task3 15:45 - 16:00
+  Day 30: task4 16:00 - 16:30
+  Day 30: task5 16:30 - 17:00
+Patient 32:
+  Day 29: task1 11:15 - 11:30
+  Day 29: task2 11:30 - 14:30
+  Day 29: task3 14:30 - 14:45
+  Day 29: task4 14:45 - 15:30
+  Day 29: task5 15:30 - 16:00
+  Day 32: task1 11:45 - 12:00
+  Day 32: task2 12:00 - 15:00
+  Day 32: task3 15:00 - 15:15
+  Day 32: task4 15:15 - 16:00
+  Day 32: task5 16:00 - 16:30
+  Day 33: task1 11:15 - 11:30
+  Day 33: task2 11:30 - 14:30
+  Day 33: task3 14:30 - 14:45
+  Day 33: task4 14:45 - 15:30
+  Day 33: task5 15:30 - 16:00
+  Day 34: task1 11:45 - 12:00
+  Day 34: task2 12:00 - 15:00
+  Day 34: task3 15:00 - 15:15
+  Day 34: task4 15:15 - 16:00
+  Day 34: task5 16:00 - 16:30
+  Day 37: task1 10:30 - 10:45
+  Day 37: task2 10:45 - 13:45
+  Day 37: task3 13:45 - 14:00
+  Day 37: task4 14:00 - 14:45
+  Day 37: task5 14:45 - 15:15
+  Day 39: task1 10:45 - 11:00
+  Day 39: task2 11:00 - 14:00
+  Day 39: task3 14:00 - 14:15
+  Day 39: task4 14:15 - 15:00
+  Day 39: task5 15:00 - 15:30
+Patient 33:
+  Day 8: task1 11:30 - 12:00
+  Day 8: task2 12:00 - 15:15
+  Day 8: task3 15:15 - 15:30
+  Day 8: task4 15:30 - 15:45
+  Day 8: task5 15:45 - 16:15
+  Day 9: task1 09:15 - 09:45
+  Day 9: task2 09:45 - 13:00
+  Day 9: task3 13:00 - 13:15
+  Day 9: task4 13:15 - 13:30
+  Day 9: task5 13:30 - 14:00
+  Day 11: task1 10:00 - 10:30
+  Day 11: task2 10:30 - 13:45
+  Day 11: task3 13:45 - 14:00
+  Day 11: task4 14:00 - 14:15
+  Day 11: task5 14:15 - 14:45
+  Day 12: task1 11:00 - 11:30
+  Day 12: task2 11:30 - 14:45
+  Day 12: task3 14:45 - 15:00
+  Day 12: task4 15:00 - 15:15
+  Day 12: task5 15:15 - 15:45
+  Day 13: task1 09:15 - 09:45
+  Day 13: task2 09:45 - 13:00
+  Day 13: task3 13:00 - 13:15
+  Day 13: task4 13:15 - 13:30
+  Day 13: task5 13:30 - 14:00
+  Day 19: task1 10:15 - 10:45
+  Day 19: task2 10:45 - 14:00
+  Day 19: task3 14:00 - 14:15
+  Day 19: task4 14:15 - 14:30
+  Day 19: task5 14:30 - 15:00
+  Day 27: task1 09:15 - 09:45
+  Day 27: task2 09:45 - 13:00
+  Day 27: task3 13:00 - 13:15
+  Day 27: task4 13:15 - 13:30
+  Day 27: task5 13:30 - 14:00
+Patient 34:
+  Day 6: task1 10:15 - 10:45
+  Day 6: task2 10:45 - 14:00
+  Day 6: task3 14:00 - 14:30
+  Day 6: task4 14:30 - 15:15
+  Day 6: task5 15:15 - 15:45
+  Day 7: task1 10:30 - 11:00
+  Day 7: task2 11:00 - 14:15
+  Day 7: task3 14:15 - 14:45
+  Day 7: task4 14:45 - 15:30
+  Day 7: task5 15:30 - 16:00
+  Day 8: task1 11:30 - 12:00
+  Day 8: task2 12:00 - 15:15
+  Day 8: task3 15:15 - 15:45
+  Day 8: task4 15:45 - 16:30
+  Day 8: task5 16:30 - 17:00
+  Day 14: task1 11:00 - 11:30
+  Day 14: task2 11:30 - 14:45
+  Day 14: task3 14:45 - 15:15
+  Day 14: task4 15:15 - 16:00
+  Day 14: task5 16:00 - 16:30
+  Day 17: task1 10:30 - 11:00
+  Day 17: task2 11:00 - 14:15
+  Day 17: task3 14:15 - 14:45
+  Day 17: task4 14:45 - 15:30
+  Day 17: task5 15:30 - 16:00
+  Day 18: task1 11:00 - 11:30
+  Day 18: task2 11:30 - 14:45
+  Day 18: task3 14:45 - 15:15
+  Day 18: task4 15:15 - 16:00
+  Day 18: task5 16:00 - 16:30
+  Day 20: task1 09:15 - 09:45
+  Day 20: task2 09:45 - 13:00
+  Day 20: task3 13:00 - 13:30
+  Day 20: task4 13:30 - 14:15
+  Day 20: task5 14:15 - 14:45
+  Day 22: task1 11:30 - 12:00
+  Day 22: task2 12:00 - 15:15
+  Day 22: task3 15:15 - 15:45
+  Day 22: task4 15:45 - 16:30
+  Day 22: task5 16:30 - 17:00
+  Day 25: task1 11:30 - 12:00
+  Day 25: task2 12:00 - 15:15
+  Day 25: task3 15:15 - 15:45
+  Day 25: task4 15:45 - 16:30
+  Day 25: task5 16:30 - 17:00
+  Day 30: task1 11:00 - 11:30
+  Day 30: task2 11:30 - 14:45
+  Day 30: task3 14:45 - 15:15
+  Day 30: task4 15:15 - 16:00
+  Day 30: task5 16:00 - 16:30
+Patient 35:
+  Day 19: task1 11:15 - 11:30
+  Day 19: task2 11:30 - 14:45
+  Day 19: task3 14:45 - 15:00
+  Day 19: task4 15:00 - 15:30
+  Day 19: task5 15:30 - 15:45
+  Day 23: task1 11:30 - 11:45
+  Day 23: task2 11:45 - 15:00
+  Day 23: task3 15:00 - 15:15
+  Day 23: task4 15:15 - 15:45
+  Day 23: task5 15:45 - 16:00
+  Day 28: task1 09:30 - 09:45
+  Day 28: task2 09:45 - 13:00
+  Day 28: task3 13:00 - 13:15
+  Day 28: task4 13:15 - 13:45
+  Day 28: task5 13:45 - 14:00
+  Day 33: task1 10:30 - 10:45
+  Day 33: task2 10:45 - 14:00
+  Day 33: task3 14:00 - 14:15
+  Day 33: task4 14:15 - 14:45
+  Day 33: task5 14:45 - 15:00
+  Day 34: task1 10:45 - 11:00
+  Day 34: task2 11:00 - 14:15
+  Day 34: task3 14:15 - 14:30
+  Day 34: task4 14:30 - 15:00
+  Day 34: task5 15:00 - 15:15
+  Day 37: task1 09:30 - 09:45
+  Day 37: task2 09:45 - 13:00
+  Day 37: task3 13:00 - 13:15
+  Day 37: task4 13:15 - 13:45
+  Day 37: task5 13:45 - 14:00
+  Day 38: task1 11:45 - 12:00
+  Day 38: task2 12:00 - 15:15
+  Day 38: task3 15:15 - 15:30
+  Day 38: task4 15:30 - 16:00
+  Day 38: task5 16:00 - 16:15
+Patient 36:
+  Day 0: task1 10:15 - 10:30
+  Day 0: task2 10:30 - 13:15
+  Day 0: task3 13:15 - 13:30
+  Day 0: task4 13:30 - 14:00
+  Day 0: task5 14:00 - 14:30
+  Day 5: task1 11:45 - 12:00
+  Day 5: task2 12:00 - 14:45
+  Day 5: task3 14:45 - 15:00
+  Day 5: task4 15:00 - 15:30
+  Day 5: task5 15:30 - 16:00
+  Day 7: task1 11:30 - 11:45
+  Day 7: task2 11:45 - 14:30
+  Day 7: task3 14:30 - 14:45
+  Day 7: task4 14:45 - 15:15
+  Day 7: task5 15:15 - 15:45
+  Day 9: task1 10:15 - 10:30
+  Day 9: task2 10:30 - 13:15
+  Day 9: task3 13:15 - 13:30
+  Day 9: task4 13:30 - 14:00
+  Day 9: task5 14:00 - 14:30
+  Day 10: task1 10:00 - 10:15
+  Day 10: task2 10:15 - 13:00
+  Day 10: task3 13:00 - 13:15
+  Day 10: task4 13:15 - 13:45
+  Day 10: task5 13:45 - 14:15
+  Day 15: task1 10:00 - 10:15
+  Day 15: task2 10:15 - 13:00
+  Day 15: task3 13:00 - 13:15
+  Day 15: task4 13:15 - 13:45
+  Day 15: task5 13:45 - 14:15
+  Day 19: task1 10:00 - 10:15
+  Day 19: task2 10:15 - 13:00
+  Day 19: task3 13:00 - 13:15
+  Day 19: task4 13:15 - 13:45
+  Day 19: task5 13:45 - 14:15
+  Day 28: task1 10:30 - 10:45
+  Day 28: task2 10:45 - 13:30
+  Day 28: task3 13:30 - 13:45
+  Day 28: task4 13:45 - 14:15
+  Day 28: task5 14:15 - 14:45
+  Day 29: task1 11:00 - 11:15
+  Day 29: task2 11:15 - 14:00
+  Day 29: task3 14:00 - 14:15
+  Day 29: task4 14:15 - 14:45
+  Day 29: task5 14:45 - 15:15
+  Day 30: task1 11:30 - 11:45
+  Day 30: task2 11:45 - 14:30
+  Day 30: task3 14:30 - 14:45
+  Day 30: task4 14:45 - 15:15
+  Day 30: task5 15:15 - 15:45
+  Day 31: task1 10:15 - 10:30
+  Day 31: task2 10:30 - 13:15
+  Day 31: task3 13:15 - 13:30
+  Day 31: task4 13:30 - 14:00
+  Day 31: task5 14:00 - 14:30
+Patient 37:
+  Day 15: task1 10:15 - 10:45
+  Day 15: task2 10:45 - 13:30
+  Day 15: task3 13:30 - 13:45
+  Day 15: task4 13:45 - 14:15
+  Day 15: task5 14:15 - 14:30
+  Day 16: task1 11:30 - 12:00
+  Day 16: task2 12:00 - 14:45
+  Day 16: task3 14:45 - 15:00
+  Day 16: task4 15:00 - 15:30
+  Day 16: task5 15:30 - 15:45
+  Day 19: task1 09:45 - 10:15
+  Day 19: task2 10:15 - 13:00
+  Day 19: task3 13:00 - 13:15
+  Day 19: task4 13:15 - 13:45
+  Day 19: task5 13:45 - 14:00
+  Day 20: task1 10:15 - 10:45
+  Day 20: task2 10:45 - 13:30
+  Day 20: task3 13:30 - 13:45
+  Day 20: task4 13:45 - 14:15
+  Day 20: task5 14:15 - 14:30
+  Day 21: task1 10:15 - 10:45
+  Day 21: task2 10:45 - 13:30
+  Day 21: task3 13:30 - 13:45
+  Day 21: task4 13:45 - 14:15
+  Day 21: task5 14:15 - 14:30
+  Day 24: task1 10:30 - 11:00
+  Day 24: task2 11:00 - 13:45
+  Day 24: task3 13:45 - 14:00
+  Day 24: task4 14:00 - 14:30
+  Day 24: task5 14:30 - 14:45
+  Day 25: task1 10:30 - 11:00
+  Day 25: task2 11:00 - 13:45
+  Day 25: task3 13:45 - 14:00
+  Day 25: task4 14:00 - 14:30
+  Day 25: task5 14:30 - 14:45
+  Day 31: task1 10:15 - 10:45
+  Day 31: task2 10:45 - 13:30
+  Day 31: task3 13:30 - 13:45
+  Day 31: task4 13:45 - 14:15
+  Day 31: task5 14:15 - 14:30
+  Day 33: task1 10:45 - 11:15
+  Day 33: task2 11:15 - 14:00
+  Day 33: task3 14:00 - 14:15
+  Day 33: task4 14:15 - 14:45
+  Day 33: task5 14:45 - 15:00
+  Day 34: task1 09:45 - 10:15
+  Day 34: task2 10:15 - 13:00
+  Day 34: task3 13:00 - 13:15
+  Day 34: task4 13:15 - 13:45
+  Day 34: task5 13:45 - 14:00
+  Day 36: task1 10:45 - 11:15
+  Day 36: task2 11:15 - 14:00
+  Day 36: task3 14:00 - 14:15
+  Day 36: task4 14:15 - 14:45
+  Day 36: task5 14:45 - 15:00
+  Day 37: task1 10:15 - 10:45
+  Day 37: task2 10:45 - 13:30
+  Day 37: task3 13:30 - 13:45
+  Day 37: task4 13:45 - 14:15
+  Day 37: task5 14:15 - 14:30
+  Day 38: task1 10:30 - 11:00
+  Day 38: task2 11:00 - 13:45
+  Day 38: task3 13:45 - 14:00
+  Day 38: task4 14:00 - 14:30
+  Day 38: task5 14:30 - 14:45
+Patient 38:
+  Day 0: task1 09:30 - 09:45
+  Day 0: task2 09:45 - 13:00
+  Day 0: task3 13:00 - 13:15
+  Day 0: task4 13:15 - 13:45
+  Day 0: task5 13:45 - 14:00
+  Day 2: task1 11:45 - 12:00
+  Day 2: task2 12:00 - 15:15
+  Day 2: task3 15:15 - 15:30
+  Day 2: task4 15:30 - 16:00
+  Day 2: task5 16:00 - 16:15
+  Day 3: task1 11:45 - 12:00
+  Day 3: task2 12:00 - 15:15
+  Day 3: task3 15:15 - 15:30
+  Day 3: task4 15:30 - 16:00
+  Day 3: task5 16:00 - 16:15
+  Day 4: task1 11:30 - 11:45
+  Day 4: task2 11:45 - 15:00
+  Day 4: task3 15:00 - 15:15
+  Day 4: task4 15:15 - 15:45
+  Day 4: task5 15:45 - 16:00
+  Day 5: task1 10:00 - 10:15
+  Day 5: task2 10:15 - 13:30
+  Day 5: task3 13:30 - 13:45
+  Day 5: task4 13:45 - 14:15
+  Day 5: task5 14:15 - 14:30
+  Day 9: task1 11:30 - 11:45
+  Day 9: task2 11:45 - 15:00
+  Day 9: task3 15:00 - 15:15
+  Day 9: task4 15:15 - 15:45
+  Day 9: task5 15:45 - 16:00
+  Day 11: task1 09:45 - 10:00
+  Day 11: task2 10:00 - 13:15
+  Day 11: task3 13:15 - 13:30
+  Day 11: task4 13:30 - 14:00
+  Day 11: task5 14:00 - 14:15
+Patient 39:
+  Day 6: task1 10:45 - 11:15
+  Day 6: task2 11:15 - 14:15
+  Day 6: task3 14:15 - 14:30
+  Day 6: task4 14:30 - 15:00
+  Day 6: task5 15:00 - 15:30
+  Day 8: task1 10:00 - 10:30
+  Day 8: task2 10:30 - 13:30
+  Day 8: task3 13:30 - 13:45
+  Day 8: task4 13:45 - 14:15
+  Day 8: task5 14:15 - 14:45
+  Day 9: task1 11:00 - 11:30
+  Day 9: task2 11:30 - 14:30
+  Day 9: task3 14:30 - 14:45
+  Day 9: task4 14:45 - 15:15
+  Day 9: task5 15:15 - 15:45
+  Day 12: task1 10:00 - 10:30
+  Day 12: task2 10:30 - 13:30
+  Day 12: task3 13:30 - 13:45
+  Day 12: task4 13:45 - 14:15
+  Day 12: task5 14:15 - 14:45
+  Day 13: task1 09:30 - 10:00
+  Day 13: task2 10:00 - 13:00
+  Day 13: task3 13:00 - 13:15
+  Day 13: task4 13:15 - 13:45
+  Day 13: task5 13:45 - 14:15
+  Day 17: task1 09:45 - 10:15
+  Day 17: task2 10:15 - 13:15
+  Day 17: task3 13:15 - 13:30
+  Day 17: task4 13:30 - 14:00
+  Day 17: task5 14:00 - 14:30
+  Day 25: task1 09:30 - 10:00
+  Day 25: task2 10:00 - 13:00
+  Day 25: task3 13:00 - 13:15
+  Day 25: task4 13:15 - 13:45
+  Day 25: task5 13:45 - 14:15
+  Day 28: task1 11:30 - 12:00
+  Day 28: task2 12:00 - 15:00
+  Day 28: task3 15:00 - 15:15
+  Day 28: task4 15:15 - 15:45
+  Day 28: task5 15:45 - 16:15
+  Day 30: task1 11:30 - 12:00
+  Day 30: task2 12:00 - 15:00
+  Day 30: task3 15:00 - 15:15
+  Day 30: task4 15:15 - 15:45
+  Day 30: task5 15:45 - 16:15
+Patient 40:
+  Day 1: task1 09:00 - 09:30
+  Day 1: task2 09:30 - 13:00
+  Day 1: task3 13:00 - 13:15
+  Day 1: task4 13:15 - 13:30
+  Day 1: task5 13:30 - 13:45
+  Day 6: task1 09:15 - 09:45
+  Day 6: task2 09:45 - 13:15
+  Day 6: task3 13:15 - 13:30
+  Day 6: task4 13:30 - 13:45
+  Day 6: task5 13:45 - 14:00
+  Day 10: task1 09:15 - 09:45
+  Day 10: task2 09:45 - 13:15
+  Day 10: task3 13:15 - 13:30
+  Day 10: task4 13:30 - 13:45
+  Day 10: task5 13:45 - 14:00
+  Day 12: task1 09:00 - 09:30
+  Day 12: task2 09:30 - 13:00
+  Day 12: task3 13:00 - 13:15
+  Day 12: task4 13:15 - 13:30
+  Day 12: task5 13:30 - 13:45
+  Day 16: task1 09:30 - 10:00
+  Day 16: task2 10:00 - 13:30
+  Day 16: task3 13:30 - 13:45
+  Day 16: task4 13:45 - 14:00
+  Day 16: task5 14:00 - 14:15
+Patient 41:
+  Day 2: task1 10:15 - 10:30
+  Day 2: task2 10:30 - 14:30
+  Day 2: task3 14:30 - 15:00
+  Day 2: task4 15:00 - 15:15
+  Day 2: task5 15:15 - 15:30
+  Day 4: task1 11:45 - 12:00
+  Day 4: task2 12:00 - 16:00
+  Day 4: task3 16:00 - 16:30
+  Day 4: task4 16:30 - 16:45
+  Day 4: task5 16:45 - 17:00
+  Day 6: task1 11:45 - 12:00
+  Day 6: task2 12:00 - 16:00
+  Day 6: task3 16:00 - 16:30
+  Day 6: task4 16:30 - 16:45
+  Day 6: task5 16:45 - 17:00
+  Day 7: task1 11:45 - 12:00
+  Day 7: task2 12:00 - 16:00
+  Day 7: task3 16:00 - 16:30
+  Day 7: task4 16:30 - 16:45
+  Day 7: task5 16:45 - 17:00
+  Day 8: task1 09:00 - 09:15
+  Day 8: task2 09:15 - 13:15
+  Day 8: task3 13:15 - 13:45
+  Day 8: task4 13:45 - 14:00
+  Day 8: task5 14:00 - 14:15
+  Day 9: task1 10:30 - 10:45
+  Day 9: task2 10:45 - 14:45
+  Day 9: task3 14:45 - 15:15
+  Day 9: task4 15:15 - 15:30
+  Day 9: task5 15:30 - 15:45
+  Day 12: task1 09:00 - 09:15
+  Day 12: task2 09:15 - 13:15
+  Day 12: task3 13:15 - 13:45
+  Day 12: task4 13:45 - 14:00
+  Day 12: task5 14:00 - 14:15
+  Day 18: task1 11:45 - 12:00
+  Day 18: task2 12:00 - 16:00
+  Day 18: task3 16:00 - 16:30
+  Day 18: task4 16:30 - 16:45
+  Day 18: task5 16:45 - 17:00
+  Day 20: task1 11:45 - 12:00
+  Day 20: task2 12:00 - 16:00
+  Day 20: task3 16:00 - 16:30
+  Day 20: task4 16:30 - 16:45
+  Day 20: task5 16:45 - 17:00
+  Day 23: task1 11:00 - 11:15
+  Day 23: task2 11:15 - 15:15
+  Day 23: task3 15:15 - 15:45
+  Day 23: task4 15:45 - 16:00
+  Day 23: task5 16:00 - 16:15
+Patient 42:
+  Day 4: task1 11:30 - 12:00
+  Day 4: task2 12:00 - 15:15
+  Day 4: task3 15:15 - 15:45
+  Day 4: task4 15:45 - 16:30
+  Day 4: task5 16:30 - 17:00
+  Day 5: task1 09:45 - 10:15
+  Day 5: task2 10:15 - 13:30
+  Day 5: task3 13:30 - 14:00
+  Day 5: task4 14:00 - 14:45
+  Day 5: task5 14:45 - 15:15
+  Day 7: task1 11:00 - 11:30
+  Day 7: task2 11:30 - 14:45
+  Day 7: task3 14:45 - 15:15
+  Day 7: task4 15:15 - 16:00
+  Day 7: task5 16:00 - 16:30
+  Day 13: task1 11:30 - 12:00
+  Day 13: task2 12:00 - 15:15
+  Day 13: task3 15:15 - 15:45
+  Day 13: task4 15:45 - 16:30
+  Day 13: task5 16:30 - 17:00
+  Day 16: task1 11:00 - 11:30
+  Day 16: task2 11:30 - 14:45
+  Day 16: task3 14:45 - 15:15
+  Day 16: task4 15:15 - 16:00
+  Day 16: task5 16:00 - 16:30
+  Day 22: task1 09:45 - 10:15
+  Day 22: task2 10:15 - 13:30
+  Day 22: task3 13:30 - 14:00
+  Day 22: task4 14:00 - 14:45
+  Day 22: task5 14:45 - 15:15
+  Day 26: task1 10:15 - 10:45
+  Day 26: task2 10:45 - 14:00
+  Day 26: task3 14:00 - 14:30
+  Day 26: task4 14:30 - 15:15
+  Day 26: task5 15:15 - 15:45
+Patient 43:
+  Day 13: task1 10:30 - 11:00
+  Day 13: task2 11:00 - 14:15
+  Day 13: task3 14:15 - 14:30
+  Day 13: task4 14:30 - 14:45
+  Day 13: task5 14:45 - 15:15
+  Day 23: task1 11:15 - 11:45
+  Day 23: task2 11:45 - 15:00
+  Day 23: task3 15:00 - 15:15
+  Day 23: task4 15:15 - 15:30
+  Day 23: task5 15:30 - 16:00
+  Day 29: task1 11:15 - 11:45
+  Day 29: task2 11:45 - 15:00
+  Day 29: task3 15:00 - 15:15
+  Day 29: task4 15:15 - 15:30
+  Day 29: task5 15:30 - 16:00
+  Day 31: task1 10:45 - 11:15
+  Day 31: task2 11:15 - 14:30
+  Day 31: task3 14:30 - 14:45
+  Day 31: task4 14:45 - 15:00
+  Day 31: task5 15:00 - 15:30
+  Day 32: task1 10:45 - 11:15
+  Day 32: task2 11:15 - 14:30
+  Day 32: task3 14:30 - 14:45
+  Day 32: task4 14:45 - 15:00
+  Day 32: task5 15:00 - 15:30
+  Day 33: task1 09:15 - 09:45
+  Day 33: task2 09:45 - 13:00
+  Day 33: task3 13:00 - 13:15
+  Day 33: task4 13:15 - 13:30
+  Day 33: task5 13:30 - 14:00
+  Day 34: task1 09:15 - 09:45
+  Day 34: task2 09:45 - 13:00
+  Day 34: task3 13:00 - 13:15
+  Day 34: task4 13:15 - 13:30
+  Day 34: task5 13:30 - 14:00
+  Day 38: task1 09:30 - 10:00
+  Day 38: task2 10:00 - 13:15
+  Day 38: task3 13:15 - 13:30
+  Day 38: task4 13:30 - 13:45
+  Day 38: task5 13:45 - 14:15
+  Day 39: task1 11:15 - 11:45
+  Day 39: task2 11:45 - 15:00
+  Day 39: task3 15:00 - 15:15
+  Day 39: task4 15:15 - 15:30
+  Day 39: task5 15:30 - 16:00
+Patient 44:
+  Day 2: task1 11:45 - 12:00
+  Day 2: task2 12:00 - 15:00
+  Day 2: task3 15:00 - 15:15
+  Day 2: task4 15:15 - 16:00
+  Day 2: task5 16:00 - 16:15
+  Day 9: task1 10:00 - 10:15
+  Day 9: task2 10:15 - 13:15
+  Day 9: task3 13:15 - 13:30
+  Day 9: task4 13:30 - 14:15
+  Day 9: task5 14:15 - 14:30
+  Day 15: task1 11:45 - 12:00
+  Day 15: task2 12:00 - 15:00
+  Day 15: task3 15:00 - 15:15
+  Day 15: task4 15:15 - 16:00
+  Day 15: task5 16:00 - 16:15
+  Day 19: task1 11:45 - 12:00
+  Day 19: task2 12:00 - 15:00
+  Day 19: task3 15:00 - 15:15
+  Day 19: task4 15:15 - 16:00
+  Day 19: task5 16:00 - 16:15
+Patient 45:
+  Day 3: task1 09:15 - 09:30
+  Day 3: task2 09:30 - 13:00
+  Day 3: task3 13:00 - 13:15
+  Day 3: task4 13:15 - 13:45
+  Day 3: task5 13:45 - 14:00
+  Day 5: task1 09:30 - 09:45
+  Day 5: task2 09:45 - 13:15
+  Day 5: task3 13:15 - 13:30
+  Day 5: task4 13:30 - 14:00
+  Day 5: task5 14:00 - 14:15
+  Day 12: task1 10:00 - 10:15
+  Day 12: task2 10:15 - 13:45
+  Day 12: task3 13:45 - 14:00
+  Day 12: task4 14:00 - 14:30
+  Day 12: task5 14:30 - 14:45
+  Day 13: task1 09:30 - 09:45
+  Day 13: task2 09:45 - 13:15
+  Day 13: task3 13:15 - 13:30
+  Day 13: task4 13:30 - 14:00
+  Day 13: task5 14:00 - 14:15
+  Day 16: task1 09:15 - 09:30
+  Day 16: task2 09:30 - 13:00
+  Day 16: task3 13:00 - 13:15
+  Day 16: task4 13:15 - 13:45
+  Day 16: task5 13:45 - 14:00
+  Day 26: task1 11:45 - 12:00
+  Day 26: task2 12:00 - 15:30
+  Day 26: task3 15:30 - 15:45
+  Day 26: task4 15:45 - 16:15
+  Day 26: task5 16:15 - 16:30
+  Day 36: task1 11:30 - 11:45
+  Day 36: task2 11:45 - 15:15
+  Day 36: task3 15:15 - 15:30
+  Day 36: task4 15:30 - 16:00
+  Day 36: task5 16:00 - 16:15
+Patient 46:
+  Day 0: task1 09:15 - 09:30
+  Day 0: task2 09:30 - 13:15
+  Day 0: task3 13:15 - 13:30
+  Day 0: task4 13:30 - 13:45
+  Day 0: task5 13:45 - 14:00
+  Day 3: task1 09:15 - 09:30
+  Day 3: task2 09:30 - 13:15
+  Day 3: task3 13:15 - 13:30
+  Day 3: task4 13:30 - 13:45
+  Day 3: task5 13:45 - 14:00
+  Day 10: task1 09:00 - 09:15
+  Day 10: task2 09:15 - 13:00
+  Day 10: task3 13:00 - 13:15
+  Day 10: task4 13:15 - 13:30
+  Day 10: task5 13:30 - 13:45
+  Day 11: task1 10:00 - 10:15
+  Day 11: task2 10:15 - 14:00
+  Day 11: task3 14:00 - 14:15
+  Day 11: task4 14:15 - 14:30
+  Day 11: task5 14:30 - 14:45
+  Day 13: task1 11:45 - 12:00
+  Day 13: task2 12:00 - 15:45
+  Day 13: task3 15:45 - 16:00
+  Day 13: task4 16:00 - 16:15
+  Day 13: task5 16:15 - 16:30
+  Day 15: task1 11:15 - 11:30
+  Day 15: task2 11:30 - 15:15
+  Day 15: task3 15:15 - 15:30
+  Day 15: task4 15:30 - 15:45
+  Day 15: task5 15:45 - 16:00
+  Day 16: task1 09:30 - 09:45
+  Day 16: task2 09:45 - 13:30
+  Day 16: task3 13:30 - 13:45
+  Day 16: task4 13:45 - 14:00
+  Day 16: task5 14:00 - 14:15
+  Day 17: task1 09:00 - 09:15
+  Day 17: task2 09:15 - 13:00
+  Day 17: task3 13:00 - 13:15
+  Day 17: task4 13:15 - 13:30
+  Day 17: task5 13:30 - 13:45
+  Day 18: task1 11:00 - 11:15
+  Day 18: task2 11:15 - 15:00
+  Day 18: task3 15:00 - 15:15
+  Day 18: task4 15:15 - 15:30
+  Day 18: task5 15:30 - 15:45
+  Day 21: task1 09:15 - 09:30
+  Day 21: task2 09:30 - 13:15
+  Day 21: task3 13:15 - 13:30
+  Day 21: task4 13:30 - 13:45
+  Day 21: task5 13:45 - 14:00
+  Day 27: task1 11:30 - 11:45
+  Day 27: task2 11:45 - 15:30
+  Day 27: task3 15:30 - 15:45
+  Day 27: task4 15:45 - 16:00
+  Day 27: task5 16:00 - 16:15
+Patient 47:
+  Day 1: task1 10:00 - 10:15
+  Day 1: task2 10:15 - 13:15
+  Day 1: task3 13:15 - 13:45
+  Day 1: task4 13:45 - 14:00
+  Day 1: task5 14:00 - 14:15
+  Day 3: task1 11:30 - 11:45
+  Day 3: task2 11:45 - 14:45
+  Day 3: task3 14:45 - 15:15
+  Day 3: task4 15:15 - 15:30
+  Day 3: task5 15:30 - 15:45
+  Day 8: task1 09:45 - 10:00
+  Day 8: task2 10:00 - 13:00
+  Day 8: task3 13:00 - 13:30
+  Day 8: task4 13:30 - 13:45
+  Day 8: task5 13:45 - 14:00
+  Day 10: task1 09:45 - 10:00
+  Day 10: task2 10:00 - 13:00
+  Day 10: task3 13:00 - 13:30
+  Day 10: task4 13:30 - 13:45
+  Day 10: task5 13:45 - 14:00
+  Day 11: task1 11:45 - 12:00
+  Day 11: task2 12:00 - 15:00
+  Day 11: task3 15:00 - 15:30
+  Day 11: task4 15:30 - 15:45
+  Day 11: task5 15:45 - 16:00
+  Day 13: task1 11:00 - 11:15
+  Day 13: task2 11:15 - 14:15
+  Day 13: task3 14:15 - 14:45
+  Day 13: task4 14:45 - 15:00
+  Day 13: task5 15:00 - 15:15
+  Day 18: task1 09:45 - 10:00
+  Day 18: task2 10:00 - 13:00
+  Day 18: task3 13:00 - 13:30
+  Day 18: task4 13:30 - 13:45
+  Day 18: task5 13:45 - 14:00
+  Day 22: task1 10:00 - 10:15
+  Day 22: task2 10:15 - 13:15
+  Day 22: task3 13:15 - 13:45
+  Day 22: task4 13:45 - 14:00
+  Day 22: task5 14:00 - 14:15
+  Day 24: task1 11:45 - 12:00
+  Day 24: task2 12:00 - 15:00
+  Day 24: task3 15:00 - 15:30
+  Day 24: task4 15:30 - 15:45
+  Day 24: task5 15:45 - 16:00
+  Day 26: task1 09:45 - 10:00
+  Day 26: task2 10:00 - 13:00
+  Day 26: task3 13:00 - 13:30
+  Day 26: task4 13:30 - 13:45
+  Day 26: task5 13:45 - 14:00
+Patient 48:
+  Day 13: task1 11:45 - 12:00
+  Day 13: task2 12:00 - 15:15
+  Day 13: task3 15:15 - 15:45
+  Day 13: task4 15:45 - 16:15
+  Day 13: task5 16:15 - 16:45
+  Day 14: task1 11:30 - 11:45
+  Day 14: task2 11:45 - 15:00
+  Day 14: task3 15:00 - 15:30
+  Day 14: task4 15:30 - 16:00
+  Day 14: task5 16:00 - 16:30
+  Day 20: task1 11:30 - 11:45
+  Day 20: task2 11:45 - 15:00
+  Day 20: task3 15:00 - 15:30
+  Day 20: task4 15:30 - 16:00
+  Day 20: task5 16:00 - 16:30
+  Day 23: task1 09:45 - 10:00
+  Day 23: task2 10:00 - 13:15
+  Day 23: task3 13:15 - 13:45
+  Day 23: task4 13:45 - 14:15
+  Day 23: task5 14:15 - 14:45
+  Day 24: task1 09:45 - 10:00
+  Day 24: task2 10:00 - 13:15
+  Day 24: task3 13:15 - 13:45
+  Day 24: task4 13:45 - 14:15
+  Day 24: task5 14:15 - 14:45
+  Day 26: task1 11:45 - 12:00
+  Day 26: task2 12:00 - 15:15
+  Day 26: task3 15:15 - 15:45
+  Day 26: task4 15:45 - 16:15
+  Day 26: task5 16:15 - 16:45
+  Day 27: task1 10:45 - 11:00
+  Day 27: task2 11:00 - 14:15
+  Day 27: task3 14:15 - 14:45
+  Day 27: task4 14:45 - 15:15
+  Day 27: task5 15:15 - 15:45
+  Day 32: task1 11:45 - 12:00
+  Day 32: task2 12:00 - 15:15
+  Day 32: task3 15:15 - 15:45
+  Day 32: task4 15:45 - 16:15
+  Day 32: task5 16:15 - 16:45
+  Day 33: task1 11:00 - 11:15
+  Day 33: task2 11:15 - 14:30
+  Day 33: task3 14:30 - 15:00
+  Day 33: task4 15:00 - 15:30
+  Day 33: task5 15:30 - 16:00
+  Day 34: task1 11:45 - 12:00
+  Day 34: task2 12:00 - 15:15
+  Day 34: task3 15:15 - 15:45
+  Day 34: task4 15:45 - 16:15
+  Day 34: task5 16:15 - 16:45
+  Day 35: task1 10:45 - 11:00
+  Day 35: task2 11:00 - 14:15
+  Day 35: task3 14:15 - 14:45
+  Day 35: task4 14:45 - 15:15
+  Day 35: task5 15:15 - 15:45
+  Day 36: task1 11:45 - 12:00
+  Day 36: task2 12:00 - 15:15
+  Day 36: task3 15:15 - 15:45
+  Day 36: task4 15:45 - 16:15
+  Day 36: task5 16:15 - 16:45
+  Day 37: task1 10:00 - 10:15
+  Day 37: task2 10:15 - 13:30
+  Day 37: task3 13:30 - 14:00
+  Day 37: task4 14:00 - 14:30
+  Day 37: task5 14:30 - 15:00
+  Day 38: task1 11:15 - 11:30
+  Day 38: task2 11:30 - 14:45
+  Day 38: task3 14:45 - 15:15
+  Day 38: task4 15:15 - 15:45
+  Day 38: task5 15:45 - 16:15
+Patient 49:
+  Day 16: task1 09:45 - 10:00
+  Day 16: task2 10:00 - 13:00
+  Day 16: task3 13:00 - 13:30
+  Day 16: task4 13:30 - 14:00
+  Day 16: task5 14:00 - 14:15
+  Day 25: task1 10:00 - 10:15
+  Day 25: task2 10:15 - 13:15
+  Day 25: task3 13:15 - 13:45
+  Day 25: task4 13:45 - 14:15
+  Day 25: task5 14:15 - 14:30
+  Day 26: task1 11:30 - 11:45
+  Day 26: task2 11:45 - 14:45
+  Day 26: task3 14:45 - 15:15
+  Day 26: task4 15:15 - 15:45
+  Day 26: task5 15:45 - 16:00
+  Day 28: task1 09:45 - 10:00
+  Day 28: task2 10:00 - 13:00
+  Day 28: task3 13:00 - 13:30
+  Day 28: task4 13:30 - 14:00
+  Day 28: task5 14:00 - 14:15
+  Day 31: task1 11:45 - 12:00
+  Day 31: task2 12:00 - 15:00
+  Day 31: task3 15:00 - 15:30
+  Day 31: task4 15:30 - 16:00
+  Day 31: task5 16:00 - 16:15
+  Day 32: task1 10:00 - 10:15
+  Day 32: task2 10:15 - 13:15
+  Day 32: task3 13:15 - 13:45
+  Day 32: task4 13:45 - 14:15
+  Day 32: task5 14:15 - 14:30
+  Day 37: task1 09:45 - 10:00
+  Day 37: task2 10:00 - 13:00
+  Day 37: task3 13:00 - 13:30
+  Day 37: task4 13:30 - 14:00
+  Day 37: task5 14:00 - 14:15
+  Day 39: task1 11:15 - 11:30
+  Day 39: task2 11:30 - 14:30
+  Day 39: task3 14:30 - 15:00
+  Day 39: task4 15:00 - 15:30
+  Day 39: task5 15:30 - 15:45
+Patient 50:
+  Day 5: task1 10:45 - 11:00
+  Day 5: task2 11:00 - 14:00
+  Day 5: task3 14:00 - 14:15
+  Day 5: task4 14:15 - 14:30
+  Day 5: task5 14:30 - 14:45
+  Day 22: task1 13:00 - 13:15
+  Day 22: task2 13:15 - 16:15
+  Day 22: task3 16:15 - 16:30
+  Day 22: task4 16:30 - 16:45
+  Day 22: task5 16:45 - 17:00
+  Day 25: task1 09:45 - 10:00
+  Day 25: task2 10:00 - 13:00
+  Day 25: task3 13:00 - 13:15
+  Day 25: task4 13:15 - 13:30
+  Day 25: task5 13:30 - 13:45
+  Day 30: task1 13:00 - 13:15
+  Day 30: task2 13:15 - 16:15
+  Day 30: task3 16:15 - 16:30
+  Day 30: task4 16:30 - 16:45
+  Day 30: task5 16:45 - 17:00
+  Day 34: task1 09:45 - 10:00
+  Day 34: task2 10:00 - 13:00
+  Day 34: task3 13:00 - 13:15
+  Day 34: task4 13:15 - 13:30
+  Day 34: task5 13:30 - 13:45
+  Day 35: task1 11:15 - 11:30
+  Day 35: task2 11:30 - 14:30
+  Day 35: task3 14:30 - 14:45
+  Day 35: task4 14:45 - 15:00
+  Day 35: task5 15:00 - 15:15
+  Day 37: task1 11:30 - 11:45
+  Day 37: task2 11:45 - 14:45
+  Day 37: task3 14:45 - 15:00
+  Day 37: task4 15:00 - 15:15
+  Day 37: task5 15:15 - 15:30
+  Day 38: task1 13:00 - 13:15
+  Day 38: task2 13:15 - 16:15
+  Day 38: task3 16:15 - 16:30
+  Day 38: task4 16:30 - 16:45
+  Day 38: task5 16:45 - 17:00
+Patient 51:
+  Day 25: task1 13:00 - 13:30
+  Day 25: task2 13:30 - 16:15
+  Day 25: task3 16:15 - 16:30
+  Day 25: task4 16:30 - 16:45
+  Day 25: task5 16:45 - 17:00
+  Day 28: task1 10:45 - 11:15
+  Day 28: task2 11:15 - 14:00
+  Day 28: task3 14:00 - 14:15
+  Day 28: task4 14:15 - 14:30
+  Day 28: task5 14:30 - 14:45
+  Day 36: task1 10:45 - 11:15
+  Day 36: task2 11:15 - 14:00
+  Day 36: task3 14:00 - 14:15
+  Day 36: task4 14:15 - 14:30
+  Day 36: task5 14:30 - 14:45
+  Day 38: task1 13:00 - 13:30
+  Day 38: task2 13:30 - 16:15
+  Day 38: task3 16:15 - 16:30
+  Day 38: task4 16:30 - 16:45
+  Day 38: task5 16:45 - 17:00
+Patient 52:
+  Day 22: task1 11:45 - 12:00
+  Day 22: task2 12:00 - 15:00
+  Day 22: task3 15:00 - 15:15
+  Day 22: task4 15:15 - 15:45
+  Day 22: task5 15:45 - 16:15
+  Day 23: task1 09:45 - 10:00
+  Day 23: task2 10:00 - 13:00
+  Day 23: task3 13:00 - 13:15
+  Day 23: task4 13:15 - 13:45
+  Day 23: task5 13:45 - 14:15
+  Day 25: task1 11:30 - 11:45
+  Day 25: task2 11:45 - 14:45
+  Day 25: task3 14:45 - 15:00
+  Day 25: task4 15:00 - 15:30
+  Day 25: task5 15:30 - 16:00
+  Day 27: task1 11:45 - 12:00
+  Day 27: task2 12:00 - 15:00
+  Day 27: task3 15:00 - 15:15
+  Day 27: task4 15:15 - 15:45
+  Day 27: task5 15:45 - 16:15
+  Day 28: task1 11:45 - 12:00
+  Day 28: task2 12:00 - 15:00
+  Day 28: task3 15:00 - 15:15
+  Day 28: task4 15:15 - 15:45
+  Day 28: task5 15:45 - 16:15
+  Day 35: task1 11:45 - 12:00
+  Day 35: task2 12:00 - 15:00
+  Day 35: task3 15:00 - 15:15
+  Day 35: task4 15:15 - 15:45
+  Day 35: task5 15:45 - 16:15
+  Day 36: task1 11:45 - 12:00
+  Day 36: task2 12:00 - 15:00
+  Day 36: task3 15:00 - 15:15
+  Day 36: task4 15:15 - 15:45
+  Day 36: task5 15:45 - 16:15
+  Day 39: task1 10:00 - 10:15
+  Day 39: task2 10:15 - 13:15
+  Day 39: task3 13:15 - 13:30
+  Day 39: task4 13:30 - 14:00
+  Day 39: task5 14:00 - 14:30
+Patient 53:
+  Day 3: task1 09:45 - 10:00
+  Day 3: task2 10:00 - 13:15
+  Day 3: task3 13:15 - 13:30
+  Day 3: task4 13:30 - 14:00
+  Day 3: task5 14:00 - 14:15
+  Day 4: task1 10:00 - 10:15
+  Day 4: task2 10:15 - 13:30
+  Day 4: task3 13:30 - 13:45
+  Day 4: task4 13:45 - 14:15
+  Day 4: task5 14:15 - 14:30
+  Day 6: task1 11:30 - 11:45
+  Day 6: task2 11:45 - 15:00
+  Day 6: task3 15:00 - 15:15
+  Day 6: task4 15:15 - 15:45
+  Day 6: task5 15:45 - 16:00
+  Day 7: task1 09:30 - 09:45
+  Day 7: task2 09:45 - 13:00
+  Day 7: task3 13:00 - 13:15
+  Day 7: task4 13:15 - 13:45
+  Day 7: task5 13:45 - 14:00
+  Day 8: task1 11:15 - 11:30
+  Day 8: task2 11:30 - 14:45
+  Day 8: task3 14:45 - 15:00
+  Day 8: task4 15:00 - 15:30
+  Day 8: task5 15:30 - 15:45
+  Day 10: task1 10:00 - 10:15
+  Day 10: task2 10:15 - 13:30
+  Day 10: task3 13:30 - 13:45
+  Day 10: task4 13:45 - 14:15
+  Day 10: task5 14:15 - 14:30
+  Day 11: task1 11:45 - 12:00
+  Day 11: task2 12:00 - 15:15
+  Day 11: task3 15:15 - 15:30
+  Day 11: task4 15:30 - 16:00
+  Day 11: task5 16:00 - 16:15
+  Day 12: task1 11:15 - 11:30
+  Day 12: task2 11:30 - 14:45
+  Day 12: task3 14:45 - 15:00
+  Day 12: task4 15:00 - 15:30
+  Day 12: task5 15:30 - 15:45
+  Day 19: task1 11:00 - 11:15
+  Day 19: task2 11:15 - 14:30
+  Day 19: task3 14:30 - 14:45
+  Day 19: task4 14:45 - 15:15
+  Day 19: task5 15:15 - 15:30
+  Day 23: task1 11:45 - 12:00
+  Day 23: task2 12:00 - 15:15
+  Day 23: task3 15:15 - 15:30
+  Day 23: task4 15:30 - 16:00
+  Day 23: task5 16:00 - 16:15
+  Day 27: task1 09:30 - 09:45
+  Day 27: task2 09:45 - 13:00
+  Day 27: task3 13:00 - 13:15
+  Day 27: task4 13:15 - 13:45
+  Day 27: task5 13:45 - 14:00
+Patient 54:
+  Day 15: task1 09:15 - 09:45
+  Day 15: task2 09:45 - 13:00
+  Day 15: task3 13:00 - 13:30
+  Day 15: task4 13:30 - 13:45
+  Day 15: task5 13:45 - 14:00
+  Day 21: task1 11:30 - 12:00
+  Day 21: task2 12:00 - 15:15
+  Day 21: task3 15:15 - 15:45
+  Day 21: task4 15:45 - 16:00
+  Day 21: task5 16:00 - 16:15
+  Day 22: task1 10:30 - 11:00
+  Day 22: task2 11:00 - 14:15
+  Day 22: task3 14:15 - 14:45
+  Day 22: task4 14:45 - 15:00
+  Day 22: task5 15:00 - 15:15
+  Day 23: task1 09:15 - 09:45
+  Day 23: task2 09:45 - 13:00
+  Day 23: task3 13:00 - 13:30
+  Day 23: task4 13:30 - 13:45
+  Day 23: task5 13:45 - 14:00
+  Day 25: task1 10:45 - 11:15
+  Day 25: task2 11:15 - 14:30
+  Day 25: task3 14:30 - 15:00
+  Day 25: task4 15:00 - 15:15
+  Day 25: task5 15:15 - 15:30
+  Day 26: task1 09:45 - 10:15
+  Day 26: task2 10:15 - 13:30
+  Day 26: task3 13:30 - 14:00
+  Day 26: task4 14:00 - 14:15
+  Day 26: task5 14:15 - 14:30
+  Day 27: task1 10:15 - 10:45
+  Day 27: task2 10:45 - 14:00
+  Day 27: task3 14:00 - 14:30
+  Day 27: task4 14:30 - 14:45
+  Day 27: task5 14:45 - 15:00
+  Day 28: task1 11:30 - 12:00
+  Day 28: task2 12:00 - 15:15
+  Day 28: task3 15:15 - 15:45
+  Day 28: task4 15:45 - 16:00
+  Day 28: task5 16:00 - 16:15
+  Day 33: task1 09:15 - 09:45
+  Day 33: task2 09:45 - 13:00
+  Day 33: task3 13:00 - 13:30
+  Day 33: task4 13:30 - 13:45
+  Day 33: task5 13:45 - 14:00
+  Day 34: task1 10:45 - 11:15
+  Day 34: task2 11:15 - 14:30
+  Day 34: task3 14:30 - 15:00
+  Day 34: task4 15:00 - 15:15
+  Day 34: task5 15:15 - 15:30
+  Day 35: task1 09:15 - 09:45
+  Day 35: task2 09:45 - 13:00
+  Day 35: task3 13:00 - 13:30
+  Day 35: task4 13:30 - 13:45
+  Day 35: task5 13:45 - 14:00
+  Day 36: task1 09:15 - 09:45
+  Day 36: task2 09:45 - 13:00
+  Day 36: task3 13:00 - 13:30
+  Day 36: task4 13:30 - 13:45
+  Day 36: task5 13:45 - 14:00
+  Day 37: task1 11:30 - 12:00
+  Day 37: task2 12:00 - 15:15
+  Day 37: task3 15:15 - 15:45
+  Day 37: task4 15:45 - 16:00
+  Day 37: task5 16:00 - 16:15
+  Day 38: task1 09:30 - 10:00
+  Day 38: task2 10:00 - 13:15
+  Day 38: task3 13:15 - 13:45
+  Day 38: task4 13:45 - 14:00
+  Day 38: task5 14:00 - 14:15
+  Day 39: task1 09:15 - 09:45
+  Day 39: task2 09:45 - 13:00
+  Day 39: task3 13:00 - 13:30
+  Day 39: task4 13:30 - 13:45
+  Day 39: task5 13:45 - 14:00
