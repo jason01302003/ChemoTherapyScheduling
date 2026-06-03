@@ -6,7 +6,7 @@ import random
 from gurobipy import *
 
 # 參數
-P = 75            # 病人數
+P = 70            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
 N_nurses = 3       # 護士人數
@@ -49,7 +49,7 @@ for i in range(P):
     V.append(treatment_list)
     Last_Position.append(last) #紀錄病人 i 最後一次治療出現在療程開始後第幾天
 # 隨機每日最大容量，要隨P調整，模擬實際醫院每天的治療容量可能不同(門診、排班)
-K = [random.randint(20, 30) for _ in range(T)]
+K = [random.randint(30, 45) for _ in range(T)]
 
 # Pattern生成和對照
 Pattern = []
@@ -170,7 +170,7 @@ for i in range(P):
 # 建模
 CTS = Model("ChemoTherapyScheduling")
 CTS.setParam('OutputFlag', 1) #輸出求解過程
-CTS.setParam('TimeLimit', 1200)
+CTS.setParam('TimeLimit', 1800)
 CTS.setParam('MIPGap', 0.01) #允許 1% gap。也就是不一定要找到絕對最佳解，只要夠接近即可。
 CTS.setParam('Heuristics', 0.5)
 CTS.setParam('Threads', 6)
@@ -468,7 +468,7 @@ task_colors = {
     }
 }
 
-output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_tm_75_1"
+output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_tm_70_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
@@ -603,7 +603,7 @@ for day in range(T):
 
                 y_pos = P - 1 - i  # 讓 Patient 1 在上方，Patient 20 在下方
 
-                for _, task, s_min, e_min in day_tasks:
+                for _, task, s_min, e_min, nurse_id in day_tasks:
 
                     current = s_min
                     while current < e_min:
@@ -622,7 +622,7 @@ for day in range(T):
                         if has_conflict and task in ["task1", "task3", "task5"]:
                             color = "orange"
                         else:
-                            color = task_colors[task]
+                            color = task_colors[nurse_id][task]
 
                         ax.barh(
                             y=y_pos,
@@ -663,11 +663,11 @@ for idx in range(T, len(axes)):
 
 # 圖例
 legend_patches = [
-    mpatches.Patch(color=task_colors["task1"], label="task1"),
-    mpatches.Patch(color=task_colors["task2"], label="task2"),
-    mpatches.Patch(color=task_colors["task3"], label="task3"),
-    mpatches.Patch(color=task_colors["task4"], label="task4"),
-    mpatches.Patch(color=task_colors["task5"], label="task5"),
+    mpatches.Patch(color=task_colors[0]["task1"], label="task1 (Nurse 0)"),
+    mpatches.Patch(color=task_colors[0]["task2"], label="task2 (no nurse)"),
+    mpatches.Patch(color=task_colors[0]["task3"], label="task3 (Nurse 0)"),
+    mpatches.Patch(color=task_colors[0]["task4"], label="task4 (no nurse)"),
+    mpatches.Patch(color=task_colors[0]["task5"], label="task5 (Nurse 0)"),
     mpatches.Patch(color="orange", label="Nurse conflict")
 ]
 
