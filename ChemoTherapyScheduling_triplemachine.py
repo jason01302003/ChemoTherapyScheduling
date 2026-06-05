@@ -6,10 +6,10 @@ import random
 from gurobipy import *
 
 # 參數
-P = 70            # 病人數
+P = 20            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
-N_nurses = 3       # 護士人數
+N_nurses = 1       # 護士人數
 prob = 0.3
 # 設定時間，並切分為slots
 slot_length = 15
@@ -26,8 +26,8 @@ lunch_end_slot = (lunch_end_min - work_start) // slot_length  # = 16
 # 總共的 slot 數量
 n_slots = max_clock // slot_length
 
-random.seed(1)
-fname = rf"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\SCP\SCPtm" + \
+random.seed(17)
+fname = rf"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\SCP\SCP" + \
     str(P)+"-"+str(1)+".txt"
 path = fname
 f = open(path, 'w')
@@ -49,7 +49,7 @@ for i in range(P):
     V.append(treatment_list)
     Last_Position.append(last) #紀錄病人 i 最後一次治療出現在療程開始後第幾天
 # 隨機每日最大容量，要隨P調整，模擬實際醫院每天的治療容量可能不同(門診、排班)
-K = [random.randint(30, 45) for _ in range(T)]
+K = [random.randint(5 * N_nurses, 10 * N_nurses) for _ in range(T)]
 
 # Pattern生成和對照
 Pattern = []
@@ -299,7 +299,7 @@ for t in range(T):
 
 # 目標函數
 nurse_penalty = 4   # 同一護士同時服務 2 人的懲罰（設較高)
-total_penalty = 2    # 兩護士都忙還有第 3 人的懲罰
+total_penalty = 2   # 護士都忙還有第 3 人的懲罰
 
 CTS.setObjective(
     MaxSize
@@ -468,7 +468,7 @@ task_colors = {
     }
 }
 
-output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_tm_70_1"
+output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_20_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
