@@ -6,10 +6,10 @@ import random
 from gurobipy import *
 
 # 參數
-P = 20            # 病人數
+P = 70            # 病人數
 L = 28            # 相對治療日數
 T = 40            # 規劃天數
-N_nurses = 1       # 護士人數
+N_nurses = 2       # 護士人數
 prob = 0.3
 # 設定時間，並切分為slots
 slot_length = 15
@@ -27,7 +27,7 @@ lunch_end_slot = (lunch_end_min - work_start) // slot_length  # = 16
 n_slots = max_clock // slot_length
 
 random.seed(17)
-fname = rf"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\SCP\SCP" + \
+fname = rf"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\SCP\SCPtm" + \
     str(P)+"-"+str(1)+".txt"
 path = fname
 f = open(path, 'w')
@@ -173,7 +173,7 @@ CTS.setParam('OutputFlag', 1) #輸出求解過程
 CTS.setParam('TimeLimit', 1800)
 CTS.setParam('MIPGap', 0.01) #允許 1% gap。也就是不一定要找到絕對最佳解，只要夠接近即可。
 CTS.setParam('Heuristics', 0.5)
-CTS.setParam('Threads', 6)
+CTS.setParam('Threads', 6) 
 
 # 定義決策變數 X、Y & MaxSize
 X = CTS.addVars(P, T, vtype=GRB.BINARY, name="X") #病人 i 在第 t 天開始療程
@@ -468,7 +468,7 @@ task_colors = {
     }
 }
 
-output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_20_1"
+output_folder = r"C:\Users\jason\Desktop\OTA_paper\ChemoTherapyScheduling\gantt_days_tm_70_1"
 os.makedirs(output_folder, exist_ok=True)
 
 for day in range(T):
